@@ -1,0 +1,29 @@
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: white;
+}
+
+
+.heading {
+  color: white;
+
+  font-weight: 800;
+  &__primary  {
+    font-size: 14rem;
+// line-height: 150;
+
+  }
+
+  &__secondary {
+    font-size: 10rem;
+    // line-height: 106;
+
+  }
+
+  &__tertiary {
+    font-size: 6rem;
+    // line-height: 70;
+  }
+}

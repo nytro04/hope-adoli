@@ -53,5 +53,9 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  transition: {
+    name: 'fade',
+    mode: 'out-in'
   }
 }
