@@ -12,7 +12,7 @@
     <div class="relative flex justify-between">
       <img src="~/assets/img/hope.png" alt="" class="w-5/12 mt-20 hero-image" />
 
-      <span class="w-1/12 vertical-line"></span>
+      <span class="vertical-line"></span>
 
       <div class="w-6/12 mt-20">
         <h1 class="border-b-2 border-white heading heading__primary">
@@ -29,7 +29,7 @@
               users love and cherish, I have worked mostly with startups in Food
               tech, Agri-tech, Health, Fin-tech, Social Media & Education.
             </p>
-            <p class="mt-5">
+            <p class="mt-8">
               I am the founder of UX Campus: An Non Profit that seeks to inspire
               people to fall in love with UX Design, by organising free 1-2 day
               workshops across Ghana.
