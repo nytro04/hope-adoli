@@ -70,7 +70,7 @@ export default {
   content: '';
   display: inline-block;
   height: 0.7rem;
-  right: 0.1rem;
+  right: 3.5rem;
   top: 7.4rem;
   position: absolute;
   vertical-align: middle;
