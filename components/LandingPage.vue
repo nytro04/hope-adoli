@@ -5,28 +5,37 @@
         HOPE ADOLI
       </h3>
       <h3 class="heading heading__tertiary">
-        contact info
+        contact me
       </h3>
     </nav>
 
     <div class="relative flex justify-between">
-      <img src="~/assets/img/hope.png" alt="" class="mt-20 hero-image" />
+      <img src="~/assets/img/hope.png" alt="" class="w-5/12 mt-20 hero-image" />
 
-      <span class="vertical-line"></span>
+      <span class="w-1/12 vertical-line"></span>
 
-      <div>
-        <h1 class="mt-20 heading heading__primary">
+      <div class="w-6/12 mt-20">
+        <h1 class="border-b-2 border-white heading heading__primary">
           <span class="name-line">Hope Adoli</span> <br />
           Product Designer <br />
           based in Accra, <br />
           Ghana.
         </h1>
 
-        <div class="flex">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus,
-            fuga.
-          </p>
+        <div class="flex justify-between mt-10">
+          <div class="w-8/12">
+            <p>
+              With over 3 years experience in building digital products that
+              users love and cherish, I have worked mostly with startups in Food
+              tech, Agri-tech, Health, Fin-tech, Social Media & Education.
+            </p>
+            <p class="mt-5">
+              I am the founder of UX Campus: An Non Profit that seeks to inspire
+              people to fall in love with UX Design, by organising free 1-2 day
+              workshops across Ghana.
+            </p>
+          </div>
+          <ArrowDownSvg class="w-2/12" />
         </div>
       </div>
     </div>
@@ -34,25 +43,25 @@
 </template>
 
 <script>
-// import ArrowDownSvg from '~/assets/svgs/play-showreel-badge.svg?inline'
+import ArrowDownSvg from '~/assets/svgs/play-showreel-badge.svg?inline'
 
 export default {
   components: {
-    // ArrowDownSvg
+    ArrowDownSvg
   }
 }
 </script>
 
 <style scoped lang="scss">
 .hero-image {
-  width: 30rem;
+  width: auto;
   height: 40rem;
 }
 
 .vertical-line {
   display: inline-block;
   border-left: 2px solid white;
-  margin: 0 10px;
+  // margin: 0 10px;
   height: 45rem;
 }
 
