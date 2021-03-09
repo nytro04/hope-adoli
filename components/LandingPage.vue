@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import ArrowDownSvg from '~/assets/svgs/play-showreel-badge.svg?inline'
+import ArrowDownSvg from '~/assets/svgs/scroll-down-badge.svg?inline'
 
 export default {
   components: {
