@@ -1,14 +1,16 @@
 <template>
   <div class="container mx-auto">
     <LandingPage />
+    <div class="my-64"></div>
+    <Video />
   </div>
 </template>
 
 <script>
 export default {
   components: {
-    LandingPage: () => import('~/components/LandingPage')
-    // Loading: () => import('~/components/common/Loading.vue'),
+    LandingPage: () => import('~/components/LandingPage'),
+    Video: () => import('~/components/Video')
   },
   head() {
     return {
