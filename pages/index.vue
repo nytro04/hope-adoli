@@ -5,6 +5,8 @@
     <Video />
     <div class="my-64"></div>
     <RecentWorks />
+    <div class="my-64"></div>
+    <Video />
   </div>
 </template>
 

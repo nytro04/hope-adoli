@@ -7,7 +7,10 @@
 
     <div class="card-container">
       <div class="card-member member-1">
-        <img src="~/assets/img/hope.png" alt="" />
+        <div class="bg-red-200 jarallax">
+          <img src="~/assets/img/GrainMate.png" alt="" class="jarallax-img" />
+          <div class="para-img"></div>
+        </div>
         <h3 class="text-3xl font-semibold">
           GrainMate mobile
         </h3>
@@ -17,6 +20,16 @@
         </p>
       </div>
       <div class="card-member member-2">
+        <div class="wa-bg jarallax">
+          <img
+            src="~/assets/img/Wacomm-mobile.png"
+            alt=""
+            class="jarallax-img"
+          />
+          <div class="para-img"></div>
+        </div>
+      </div>
+      <!-- <div class="card-member member-2">
         <img src="~/assets/img/hope.png" alt="" />
         <h3 class="text-3xl font-semibold">
           GrainMate mobile
@@ -25,41 +38,34 @@
           GrainMate app is supercharging African farmers and agribusinesses with
           the tools and resources they need to get to the next level ⚡️
         </p>
-      </div>
-      <div class="card-member member-1"></div>
+      </div> -->
     </div>
-    <p>cool</p>
-    <p>cool</p>
-    <p>cool</p>
-    <p>cool</p>
-    <p>cool</p>
-    <p>cool</p>
-    <p>cool</p>
-    <p>cool</p>
-    <p>cool</p>
-    <p>cool</p>
-    <p>cool</p>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  components: {}
+}
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .card-container {
-  /* background: #000; */
-  /* height: 80vh; */
+  height: 80vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15rem;
+  column-gap: 15rem;
   /* grid-template-rows: auto 1fr 1fr 2fr 1fr 1fr; */
   grid-template-rows: repeat(6, 1fr);
+
+  .para-img {
+    height: 30rem;
+  }
 }
 
-/* .card-member {
-  text-align: center;
-} */
+.wa-bg {
+  background-color: #192a49;
+}
 
 .member-1 {
   grid-row-start: 1;
@@ -70,5 +76,11 @@ export default {}
   grid-row-start: 2;
   grid-column-start: 2;
   grid-row-end: 5;
+}
+
+.recent-bg {
+  background-color: red;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 </style>
