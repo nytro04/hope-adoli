@@ -11,7 +11,7 @@
           <img src="~/assets/img/GrainMate.png" alt="" class="jarallax-img" />
           <div class="para-img"></div>
         </div>
-        <h3 class="text-3xl font-semibold">
+        <h3 class="mt-10 mb-3 text-3xl font-semibold">
           GrainMate mobile
         </h3>
         <p>
@@ -20,25 +20,22 @@
         </p>
       </div>
       <div class="card-member member-2">
-        <div class="wa-bg jarallax">
+        <div class="bg-red-200 jarallax">
           <img
             src="~/assets/img/Wacomm-mobile.png"
             alt=""
-            class="jarallax-img"
+            class="jarallax-img wa-bg"
           />
           <div class="para-img"></div>
         </div>
-      </div>
-      <!-- <div class="card-member member-2">
-        <img src="~/assets/img/hope.png" alt="" />
-        <h3 class="text-3xl font-semibold">
-          GrainMate mobile
+        <h3 class="mt-10 mb-3 text-3xl font-semibold">
+          Wacomm mobile
         </h3>
         <p>
-          GrainMate app is supercharging African farmers and agribusinesses with
-          the tools and resources they need to get to the next level ⚡️
+          The Geo-social property management app that connects property owners
+          and their tenants.
         </p>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
