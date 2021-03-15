@@ -5,7 +5,7 @@
     </h2>
     <span class="block mt-10 mb-32 border-t-2 border-white"></span>
 
-    <div class="mb-20 card-container">
+    <div class="mb-32 card-container">
       <div class="card-member member-1">
         <div class="grain jarallax">
           <img src="~/assets/img/GrainMate.png" alt="" class="jarallax-img" />
@@ -38,7 +38,7 @@
       </div>
     </div>
 
-    <div class="mb-20 card-container">
+    <div class="mb-32 card-container">
       <div class="card-member member-1">
         <div class="adiutor jarallax">
           <img src="~/assets/img/Adiutor.png" alt="" class="jarallax-img" />

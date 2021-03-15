@@ -35,7 +35,10 @@
               workshops across Ghana.
             </p>
           </div>
-          <ArrowDownSvg class="w-2/12" />
+          <div class="relative ml-20">
+            <ArrowBadgeSvg class="w-8/12" />
+            <ArrowDownSvg class="absolute h-12 arrow-pos left-10 " />
+          </div>
         </div>
       </div>
     </div>
@@ -43,16 +46,22 @@
 </template>
 
 <script>
-import ArrowDownSvg from '~/assets/svgs/scroll-down-badge.svg?inline'
+import ArrowBadgeSvg from '~/assets/svgs/scroll-down-badge.svg?inline'
+import ArrowDownSvg from '~/assets/svgs/scroll-down-arrow.svg?inline'
 
 export default {
   components: {
-    ArrowDownSvg
+    ArrowDownSvg,
+    ArrowBadgeSvg
   }
 }
 </script>
 
 <style scoped lang="scss">
+.arrow-pos {
+  top: 4.7rem;
+}
+
 .hero-image {
   width: auto;
   height: 40rem;

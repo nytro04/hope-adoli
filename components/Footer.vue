@@ -13,21 +13,11 @@
             :href="link.url"
             target="_blank"
             rel="noopener noreferrer"
-            >{{ link.name }}</a
           >
+            {{ link.name }}
+          </a>
         </li>
       </ul>
-      <!-- <p>contact</p>
-        <p class="ml-10">
-          linkedin
-        </p>
-        <p class="ml-10">
-          instagram
-        </p>
-        <p class="ml-10">
-          twitter
-        </p> -->
-      <!-- </div> -->
     </div>
   </div>
 </template>
