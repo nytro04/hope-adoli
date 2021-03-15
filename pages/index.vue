@@ -10,6 +10,7 @@
     <div class="my-64"></div>
     <Links />
     <div class="my-64"></div>
+    <Footer />
   </div>
 </template>
 
@@ -19,7 +20,8 @@ export default {
     LandingPage: () => import('~/components/LandingPage'),
     Video: () => import('~/components/Video'),
     RecentWorks: () => import('~/components/RecentWorks'),
-    Links: () => import('~/components/Links')
+    Links: () => import('~/components/Links'),
+    Footer: () => import('~/components/Footer')
   },
   head() {
     return {
