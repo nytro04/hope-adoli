@@ -7,6 +7,9 @@
     <RecentWorks />
     <div class="my-64"></div>
     <Video />
+    <div class="my-64"></div>
+    <Links />
+    <div class="my-64"></div>
   </div>
 </template>
 
@@ -15,7 +18,8 @@ export default {
   components: {
     LandingPage: () => import('~/components/LandingPage'),
     Video: () => import('~/components/Video'),
-    RecentWorks: () => import('~/components/RecentWorks')
+    RecentWorks: () => import('~/components/RecentWorks'),
+    Links: () => import('~/components/Links')
   },
   head() {
     return {
