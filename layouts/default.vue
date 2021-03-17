@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto">
-    <Navbar />
+    <Navbar :page="currentRoute" />
     <nuxt />
     <Footer />
   </div>
@@ -11,6 +11,19 @@ export default {
   components: {
     Navbar: () => import('~/components/Navbar'),
     Footer: () => import('~/components/Footer')
+  },
+
+  computed: {
+    currentRoute() {
+      const name = this.$nuxt.$route.path
+        .split('/')
+        .join('')
+        .split('-')
+        .join('')
+        .toUpperCase()
+
+      return name
+    }
   }
 }
 </script>
