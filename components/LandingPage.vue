@@ -1,14 +1,5 @@
 <template>
   <div class="">
-    <nav class="flex justify-between py-4 border-b-2 border-white">
-      <h3 class="heading heading__tertiary">
-        HOPE ADOLI
-      </h3>
-      <h3 class="heading heading__tertiary">
-        contact me
-      </h3>
-    </nav>
-
     <div class="relative flex justify-between">
       <img src="~/assets/img/hope.png" alt="" class="w-5/12 mt-20 hero-image" />
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div>
     <LandingPage />
     <div class="my-64"></div>
     <Video />
@@ -10,7 +10,7 @@
     <div class="my-64"></div>
     <Links />
     <div class="my-64"></div>
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
@@ -20,8 +20,8 @@ export default {
     LandingPage: () => import('~/components/LandingPage'),
     Video: () => import('~/components/Video'),
     RecentWorks: () => import('~/components/RecentWorks'),
-    Links: () => import('~/components/Links'),
-    Footer: () => import('~/components/Footer')
+    Links: () => import('~/components/Links')
+    // Footer: () => import('~/components/Footer')
   },
   head() {
     return {
