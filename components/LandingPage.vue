@@ -15,7 +15,7 @@
       <span class="vertical-line"></span>
 
       <div class="w-6/12 mt-20">
-        <h1 class="border-b-2 border-white heading heading__primary">
+        <h1 class="pb-10 border-b-2 border-white heading heading__primary">
           <span class="name-line">Hope Adoli</span> <br />
           Product Designer <br />
           based in Accra, <br />
@@ -80,7 +80,7 @@ export default {
   display: inline-block;
   height: 0.7rem;
   right: 3.5rem;
-  top: 7.4rem;
+  top: 6.7rem;
   position: absolute;
   vertical-align: middle;
   width: 15%;
