@@ -5,7 +5,7 @@
     </h2>
     <span class="block mt-10 mb-32 border-t-2 border-white"></span>
 
-    <div class="mb-32 card-container">
+    <nuxt-link to="grain-mate" class="mb-32 card-container">
       <div class="card-member member-1">
         <div class="grain jarallax">
           <img src="~/assets/img/GrainMate.png" alt="" class="jarallax-img" />
@@ -36,7 +36,7 @@
           and their tenants.
         </p>
       </div>
-    </div>
+    </nuxt-link>
 
     <div class="mb-32 card-container">
       <div class="card-member member-1">

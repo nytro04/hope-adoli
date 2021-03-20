@@ -1,11 +1,11 @@
 <template>
   <nav class="flex justify-between py-4 border-b-2 border-white">
-    <h3 class="heading heading__tertiary">
+    <nuxt-link to="/" class="heading heading__tertiary">
       HOPE ADOLI
-      <span v-if="$nuxt.$route.path !== '/'" class="text-gray-400"
-        >/ {{ page }}</span
-      >
-    </h3>
+      <span v-if="$nuxt.$route.path !== '/'" class="text-gray-400">
+        / {{ page }}
+      </span>
+    </nuxt-link>
     <h3 class="heading heading__tertiary">
       contact me
     </h3>
