@@ -25,7 +25,7 @@
         </p>
 
         <div class="mt-8">
-          <nuxt-link to="">
+          <nuxt-link to="" class="font-semibold">
             Download on Google Playstore
           </nuxt-link>
         </div>
@@ -70,7 +70,7 @@
       <h3 class="w-5/12 mb-6 text-4xl font-bold">
         A beautiful design that solves problems.
       </h3>
-      <p class="w-6/12">
+      <p class="w-6/12 text-gray-400">
         From our UX research of the 4 main target users, it became evident that
         the farmers were going to need the most help navigating the app. In
         order to help them do so easily, I used colours on the backgrounds of
@@ -122,7 +122,7 @@
       <h3 class="w-5/12 mb-6 text-4xl font-bold">
         Designing for 10,000+ unique set of target user base.
       </h3>
-      <p class="w-6/12">
+      <p class="w-6/12 text-gray-400">
         One of the most exciting things about this project was unlearning most
         things I knew about farming and agriculture as a whole, and then
         learning new behaviours from farmers, warehouse managers,
@@ -133,7 +133,7 @@
       </p>
     </div>
 
-    <div class="mb-40 full-width ">
+    <div class="mb-40  full-width">
       <div class="mt-20 grain-bg-2"></div>
     </div>
 
