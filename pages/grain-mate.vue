@@ -32,7 +32,9 @@
       </div>
     </div>
 
-    <div class="mt-20 grain-bg"></div>
+    <div class="full-width">
+      <div class="mt-20 grain-bg"></div>
+    </div>
   </div>
 </template>
 
@@ -42,9 +44,16 @@ export default {}
 
 <style lang="scss" scoped>
 .grain-bg {
-  background-image: url('~/assets/img/Microbis.png');
-  height: 100vh;
+  background-image: url('~/assets/img/hero-section-img.png');
+  height: 90vh;
   width: 100%;
   background-size: cover;
+  background-position: center;
+  background-color: #11905c;
+}
+
+.full-width {
+  margin-left: -5rem;
+  margin-right: -5rem;
 }
 </style>

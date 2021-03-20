@@ -1,8 +1,10 @@
 <template>
-  <div class="flex items-center justify-center video">
-    <div class="relative">
-      <ArrowDownSvg class="" />
-      <PlaySvg class="play" />
+  <div class="full-width">
+    <div class="flex items-center justify-center video">
+      <div class="relative">
+        <ArrowDownSvg class="" />
+        <PlaySvg class="play" />
+      </div>
     </div>
   </div>
 </template>
@@ -29,5 +31,10 @@ export default {
   position: absolute;
   top: 5rem;
   left: 5.5rem;
+}
+
+.full-width {
+  margin-left: -5rem;
+  margin-right: -5rem;
 }
 </style>
