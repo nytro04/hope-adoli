@@ -1,5 +1,5 @@
 <template>
-  <div class="my-32 grain-mate">
+  <div class="my-40 grain-mate">
     <div class="flex justify-between">
       <div class="w-6/12">
         <h1 class="heading heading__primary">
@@ -31,6 +31,8 @@
         </div>
       </div>
     </div>
+
+    <div class="mt-20 grain-bg"></div>
   </div>
 </template>
 
@@ -38,4 +40,11 @@
 export default {}
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.grain-bg {
+  background-image: url('~/assets/img/Microbis.png');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+</style>
