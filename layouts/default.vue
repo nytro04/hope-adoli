@@ -1,6 +1,9 @@
 <template>
   <div class="container mx-auto">
-    <Navbar :page="currentRoute" />
+    <transition name="slide">
+      <ContactPage v-show="showSlideMenu" @close-slide="closeSlideMenu" />
+    </transition>
+    <Navbar :page="currentRoute" @open-slide="openSlideMenu()" />
     <nuxt />
     <Footer />
   </div>
@@ -10,7 +13,14 @@
 export default {
   components: {
     Navbar: () => import('~/components/Navbar'),
-    Footer: () => import('~/components/Footer')
+    Footer: () => import('~/components/Footer'),
+    ContactPage: () => import('~/components/ContactPage')
+  },
+
+  data() {
+    return {
+      showSlideMenu: false
+    }
   },
 
   computed: {
@@ -23,6 +33,16 @@ export default {
         .toUpperCase()
 
       return name
+    }
+  },
+
+  methods: {
+    openSlideMenu() {
+      this.showSlideMenu = true
+    },
+
+    closeSlideMenu() {
+      this.showSlideMenu = false
     }
   }
 }
