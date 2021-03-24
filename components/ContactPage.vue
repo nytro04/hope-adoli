@@ -2,13 +2,13 @@
   <div class="container mx-auto text-black bg-white contact">
     <div class="px-20 pt-20 pb-10 sidenav">
       <i
-        class="cursor-pointer hover:bg-black hover:text-white closebtn"
+        class="mt-10 cursor-pointer hover:bg-black hover:text-white closebtn"
         @click="close()"
       >
         &times;
       </i>
 
-      <div class="flex">
+      <div class="flex pb-10 mt-20 border-b-2 border-black">
         <div class="w-6/12">
           <h1 class="text-black heading heading__primary">
             Get in <br />
@@ -23,12 +23,72 @@
           </p>
         </div>
       </div>
+
+      <ul class="flex justify-between py-12 border-b-2 border-black">
+        <li v-for="(link, index) in links" :key="index" class="">
+          <a
+            class="font-bold link-text"
+            :href="link.url"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ link.name }}
+            <span class="inline-block pb-5">
+              <LinkSvg />
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <form class="mt-10" @submit.prevent="">
+        <div class="flex">
+          <div class="">
+            <input
+              class="inline-block"
+              type="text"
+              placeholder="First name"
+              required
+            />
+            <input
+              class="inline-block"
+              type="text"
+              placeholder="Last name"
+              required
+            />
+          </div>
+          <div class=""></div>
+        </div>
+      </form>
     </div>
   </div>
 </template>
 
 <script>
+import LinkSvg from '~/assets/svgs/arrow-up-right-2.svg?inline'
+
 export default {
+  components: {
+    LinkSvg
+  },
+  data() {
+    return {
+      links: [
+        {
+          name: 'Twitter',
+          url: '/get-in-touch'
+        },
+
+        {
+          name: 'Instagram',
+          url: '/get-in-touch'
+        },
+        {
+          name: 'Linkedin',
+          url: '/get-in-touch'
+        }
+      ]
+    }
+  },
   methods: {
     close() {
       this.$emit('close-slide')
@@ -37,4 +97,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped lang="scss">
+.link-text {
+  font-size: 2.5rem;
+}
+</style>
