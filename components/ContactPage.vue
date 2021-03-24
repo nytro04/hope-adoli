@@ -44,19 +44,67 @@
         <div class="flex">
           <div class="">
             <input
-              class="inline-block"
+              id="firstName"
+              name="firstName"
+              class="inline-block mb-3"
               type="text"
               placeholder="First name"
               required
             />
+
             <input
-              class="inline-block"
+              id="lastName"
+              name="lastName"
+              class="inline-block mb-3"
               type="text"
               placeholder="Last name"
               required
             />
+
+            <select id="interest" name="interest" class="inline-block">
+              <option value="">
+                Interested In ?
+              </option>
+              <option value="">
+                Interested In
+              </option>
+              <option value="">
+                Interested In ?
+              </option>
+              <option value="">
+                Interested In ?
+              </option>
+            </select>
+            <select id="interest" name="interest" class="inline-block">
+              <option value="">
+                What's your budget range
+              </option>
+              <option value="">
+                Interested In
+              </option>
+              <option value="">
+                Interested In ?
+              </option>
+              <option value="">
+                Interested In ?
+              </option>
+            </select>
           </div>
-          <div class=""></div>
+          <div class="">
+            <textarea
+              id=""
+              name=""
+              cols="30"
+              rows="7"
+              class="resize-none"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="text-right">
+          <button class=" btn btn__black">
+            Send message
+          </button>
         </div>
       </form>
     </div>
