@@ -1,21 +1,23 @@
 <template>
   <div class="container mx-auto text-black bg-white contact">
     <div class="px-20 pt-20 pb-10 sidenav">
-      <i
-        class="mt-10 cursor-pointer hover:bg-black hover:text-white closebtn"
-        @click="close()"
-      >
-        &times;
-      </i>
+      <div class="text-right">
+        <i
+          class="mt-10 text-4xl cursor-pointer hover:bg-black hover:text-white"
+          @click="close()"
+        >
+          &times;
+        </i>
+      </div>
 
-      <div class="flex pb-10 mt-20 border-b-2 border-black">
-        <div class="w-6/12">
-          <h1 class="text-black heading heading__primary">
+      <div class="flex pb-10 mt-10 border-b-2 border-black">
+        <div class="w-6/12 ">
+          <h1 class="mb-2 text-black heading heading__primary">
             Get in <br />
             touch.
           </h1>
         </div>
-        <div class="w-6/12">
+        <div class="w-6/12 mt-12 text-sm">
           <p>
             Thanks in advance for reaching out! Please note that the contact
             form is for work only. If you just want to say hello, then hit me up
@@ -24,7 +26,7 @@
         </div>
       </div>
 
-      <ul class="flex justify-between py-12 border-b-2 border-black">
+      <ul class="flex justify-between py-8 border-b-2 border-black">
         <li v-for="(link, index) in links" :key="index" class="">
           <a
             class="font-bold link-text"
