@@ -9,6 +9,10 @@
       <h3 class="mb-10 text-7xl">
         Get In touch
       </h3>
+
+      <button class="my-10 text-7xl">
+        UX on Campus
+      </button>
       <ul>
         <li v-for="(link, index) in links" :key="index" class="my-10 text-7xl">
           <nuxt-link :to="link.url">
@@ -33,10 +37,6 @@ export default {
   data() {
     return {
       links: [
-        {
-          name: 'UX on Campus',
-          url: '/get-in-touch'
-        },
         {
           name: 'Donwload free design resources',
           url: '/get-in-touch'

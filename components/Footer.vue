@@ -27,21 +27,22 @@ export default {
   data() {
     return {
       links: [
+        // {
+        //   name: 'contact',
+        //   url: '/get-in-touch'
+        // },
         {
-          name: 'contact',
-          url: '/get-in-touch'
+          name: 'Twitter',
+          url: 'https://twitter.com/uxkafui'
+        },
+
+        {
+          name: 'Instagram',
+          url: 'https://instagram.com/uxkafui'
         },
         {
-          name: 'linkedin',
-          url: '/get-in-touch'
-        },
-        {
-          name: 'instagram',
-          url: '/get-in-touch'
-        },
-        {
-          name: 'twitter',
-          url: '/get-in-touch'
+          name: 'LinkedIn',
+          url: 'https://linkedin.com/in/hopeadoli'
         }
       ]
     }

@@ -28,8 +28,8 @@ export default {
       const name = this.$nuxt.$route.path
         .split('/')
         .join('')
-        .split('-')
-        .join('')
+        // .split('-')
+        // .join('')
         .toUpperCase()
 
       return name

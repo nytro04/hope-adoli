@@ -133,7 +133,7 @@
       </p>
     </div>
 
-    <div class="mb-40  full-width">
+    <div class="mb-40 full-width">
       <div class="mt-20 grain-bg-2"></div>
     </div>
 
@@ -193,7 +193,7 @@ export default {}
 <style lang="scss" scoped>
 .grain-bg {
   background-image: url('~/assets/img/hero-section-img.png');
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -201,7 +201,7 @@ export default {}
 }
 .grain-bg-2 {
   background-image: url('~/assets/img/img-05.png');
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;

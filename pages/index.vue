@@ -1,12 +1,15 @@
 <template>
-  <div>
+  <!-- <div class="relative"> -->
+  <div class="overflow-hidden">
     <LandingPage />
     <div class="my-64"></div>
     <Video />
     <div class="my-64"></div>
     <RecentWorks />
-    <div class="my-64"></div>
-    <Video />
+    <div class="my-64 "></div>
+    <!-- <div class="absolute left-0 right-0 bottom-5"> -->
+    <Jobs />
+    <!-- </div> -->
     <div class="my-64"></div>
     <Links />
     <div class="my-64"></div>
@@ -20,8 +23,8 @@ export default {
     LandingPage: () => import('~/components/LandingPage'),
     Video: () => import('~/components/Video'),
     RecentWorks: () => import('~/components/RecentWorks'),
-    Links: () => import('~/components/Links')
-    // Footer: () => import('~/components/Footer')
+    Links: () => import('~/components/Links'),
+    Jobs: () => import('~/components/Jobs')
   },
   head() {
     return {

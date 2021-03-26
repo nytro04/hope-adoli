@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto text-black bg-white contact">
-    <div class="px-20 pt-20 pb-10 sidenav">
+    <div class="px-20 pt-10 pb-10 sidenav">
       <div class="text-right">
         <i
           class="mt-10 text-4xl cursor-pointer hover:bg-black hover:text-white"
@@ -42,71 +42,83 @@
         </li>
       </ul>
 
-      <form class="mt-10" @submit.prevent="">
+      <form class="mt-10" @submit.prevent="handleContact">
         <div class="flex">
-          <div class="">
+          <div class="w-1/2">
             <input
               id="firstName"
               name="firstName"
-              class="inline-block mb-3"
+              class="inline-block w-full px-3 py-2 mb-3 bg-gray-200"
               type="text"
               placeholder="First name"
               required
             />
 
             <input
-              id="lastName"
-              name="lastName"
-              class="inline-block mb-3"
-              type="text"
-              placeholder="Last name"
+              id="email"
+              name="email"
+              class="inline-block w-full px-3 py-2 mb-3 bg-gray-200 "
+              type="email"
+              placeholder="Email Address"
               required
             />
 
-            <select id="interest" name="interest" class="inline-block">
-              <option value="">
-                Interested In ?
-              </option>
-              <option value="">
-                Interested In
-              </option>
-              <option value="">
-                Interested In ?
-              </option>
-              <option value="">
-                Interested In ?
-              </option>
-            </select>
-            <select id="interest" name="interest" class="inline-block">
-              <option value="">
-                What's your budget range
-              </option>
-              <option value="">
-                Interested In
-              </option>
-              <option value="">
-                Interested In ?
-              </option>
-              <option value="">
-                Interested In ?
-              </option>
-            </select>
+            <div>
+              <select
+                id="interest"
+                name="interest"
+                class="inline-block w-full px-3 py-3 mb-3 bg-gray-200 "
+              >
+                <option value="">
+                  Interested In ?
+                </option>
+                <option value="">
+                  Interested In
+                </option>
+                <option value="">
+                  Interested In ?
+                </option>
+                <option value="">
+                  Interested In ?
+                </option>
+              </select>
+            </div>
+            <div>
+              <select
+                id="interest"
+                name="interest"
+                class="inline-block w-full px-3 py-3 mb-3 bg-gray-200"
+              >
+                <option value="">
+                  What's your budget range
+                </option>
+                <option value="">
+                  Interested In
+                </option>
+                <option value="">
+                  Interested In ?
+                </option>
+                <option value="">
+                  Interested In ?
+                </option>
+              </select>
+            </div>
           </div>
-          <div class="">
+          <div class="w-1/2 mx-8">
             <textarea
               id=""
               name=""
               cols="30"
-              rows="7"
-              class="resize-none"
+              rows="5"
+              placeholder="Tell me more about your project"
+              class="px-3 py-2 mb-3 text-sm bg-gray-200 resize-none"
             ></textarea>
+            <div class="mt-2 text-right">
+              <button class=" btn btn__black">
+                Send message
+              </button>
+            </div>
           </div>
-        </div>
-
-        <div class="text-right">
-          <button class=" btn btn__black">
-            Send message
-          </button>
         </div>
       </form>
     </div>
@@ -125,16 +137,16 @@ export default {
       links: [
         {
           name: 'Twitter',
-          url: '/get-in-touch'
+          url: 'https://twitter.com/uxkafui'
         },
 
         {
           name: 'Instagram',
-          url: '/get-in-touch'
+          url: 'https://instagram.com/uxkafui'
         },
         {
-          name: 'Linkedin',
-          url: '/get-in-touch'
+          name: 'LinkedIn',
+          url: 'https://linkedin.com/in/hopeadoli'
         }
       ]
     }
@@ -142,7 +154,9 @@ export default {
   methods: {
     close() {
       this.$emit('close-slide')
-    }
+    },
+
+    handleContact() {}
   }
 }
 </script>
