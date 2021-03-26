@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="full-width ">
     <div
       class="flex px-16 space-x-32 scroller heading heading__primary whitespace-nowrap"
     >
@@ -29,5 +29,10 @@ export default {}
   to {
     transform: translateX(-100%);
   }
+}
+
+.full-width {
+  /* margin-left: -10rem;
+  margin-right: -10rem; */
 }
 </style>

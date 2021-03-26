@@ -42,7 +42,7 @@
         </li>
       </ul>
 
-      <form class="mt-10" @submit.prevent="handleContact">
+      <form class="mt-20" @submit.prevent="handleContact">
         <div class="flex">
           <div class="w-1/2">
             <input
@@ -104,14 +104,14 @@
               </select>
             </div>
           </div>
-          <div class="w-1/2 mx-8">
+          <div class="w-1/2 ml-8">
             <textarea
               id=""
               name=""
               cols="30"
               rows="5"
               placeholder="Tell me more about your project"
-              class="px-3 py-2 mb-3 text-sm bg-gray-200 resize-none"
+              class="w-full px-3 py-2 mb-3 text-sm bg-gray-200 resize-none"
             ></textarea>
             <div class="mt-2 text-right">
               <button class=" btn btn__black">
