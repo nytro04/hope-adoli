@@ -1,9 +1,11 @@
 <template>
   <div class="container mx-auto">
     <transition name="slide">
-      <ContactPage v-show="showSlideMenu" @close-slide="closeSlideMenu" />
+      <div v-if="open" class="slidein">
+        <ContactPage :close="toggle" />
+      </div>
     </transition>
-    <Navbar :page="currentRoute" @open-slide="openSlideMenu()" />
+    <Navbar :page="currentRoute" :open="toggle" />
     <nuxt />
     <Footer />
   </div>
@@ -19,7 +21,7 @@ export default {
 
   data() {
     return {
-      showSlideMenu: false
+      open: false
     }
   },
 
@@ -37,15 +39,27 @@ export default {
   },
 
   methods: {
-    openSlideMenu() {
-      this.showSlideMenu = true
-    },
-
-    closeSlideMenu() {
-      this.showSlideMenu = false
+    toggle() {
+      this.open = !this.open
     }
   }
 }
 </script>
 
-<style></style>
+<style scoped>
+.slidein {
+  max-width: 50rem;
+
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+
+.slide-enter,
+.slide-leave-active {
+  right: -100%;
+}
+</style>

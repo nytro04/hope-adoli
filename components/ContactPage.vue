@@ -1,11 +1,8 @@
 <template>
   <div class="container mx-auto text-black bg-white contact">
-    <div class="px-20 pt-10 pb-10 sidenav">
+    <div class="px-20 pt-10 pb-10">
       <div class="text-right">
-        <i
-          class="mt-10 text-4xl cursor-pointer hover:bg-black hover:text-white"
-          @click="close()"
-        >
+        <i class="mt-10 text-4xl cursor-pointer " @click="close">
           &times;
         </i>
       </div>
@@ -132,8 +129,15 @@ export default {
   components: {
     LinkSvg
   },
+  props: {
+    close: {
+      type: Function,
+      default: () => ({})
+    }
+  },
   data() {
     return {
+      open: false,
       links: [
         {
           name: 'Twitter',
@@ -152,9 +156,9 @@ export default {
     }
   },
   methods: {
-    close() {
-      this.$emit('close-slide')
-    },
+    // close() {
+    //   this.$emit('close-slide')
+    // },
 
     handleContact() {}
   }

@@ -6,7 +6,7 @@
         / {{ page }}
       </span>
     </nuxt-link>
-    <h3 class="heading heading__tertiary" @click="openSlideMenu()">
+    <h3 class="cursor-pointer heading heading__tertiary" @click="open">
       contact me
     </h3>
 
@@ -20,14 +20,14 @@ export default {
     page: {
       type: String,
       default: ''
+    },
+    open: {
+      type: Function,
+      default: () => ({})
     }
   },
 
-  methods: {
-    openSlideMenu() {
-      this.$emit('open-slide')
-    }
-  }
+  methods: {}
 }
 </script>
 
