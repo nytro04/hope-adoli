@@ -19,7 +19,7 @@ export default {}
 
 <style scoped>
 .scroller {
-  animation: scroll 15s alternate infinite;
+  animation: scroll 15s infinite;
 }
 
 @keyframes scroll {
@@ -29,10 +29,5 @@ export default {}
   to {
     transform: translateX(-180%);
   }
-}
-
-.full-width {
-  /* margin-left: -10rem;
-  margin-right: -10rem; */
 }
 </style>
