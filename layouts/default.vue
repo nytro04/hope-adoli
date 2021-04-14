@@ -48,7 +48,7 @@ export default {
 
 <style scoped>
 .slidein {
-  max-width: 50rem;
+  max-width: 60rem;
 
   position: fixed;
   z-index: 100;

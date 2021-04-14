@@ -1,10 +1,12 @@
 <template>
   <div class="container mx-auto text-black bg-white contact">
     <div class="h-screen p-5 px-20 py-10">
-      <div class="text-right">
-        <i class="mt-5 text-4xl cursor-pointer " @click="close">
-          &times;
-        </i>
+      <div class="flex justify-end">
+        <CloseSvg
+          class="mt-5 cursor-pointer "
+          style="width: 12px;"
+          @click="close"
+        />
       </div>
 
       <div class="flex pb-10 mt-5 border-b-2 border-black">
@@ -126,10 +128,12 @@
 
 <script>
 import LinkSvg from '~/assets/svgs/arrow-up-right-2.svg?inline'
+import CloseSvg from '~/assets/svgs/x.svg?inline'
 
 export default {
   components: {
-    LinkSvg
+    LinkSvg,
+    CloseSvg
   },
   props: {
     close: {
