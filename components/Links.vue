@@ -14,7 +14,11 @@
         UX on Campus
       </button>
       <ul>
-        <li v-for="(link, index) in links" :key="index" class="my-10 text-7xl">
+        <li
+          v-for="(link, index) in links"
+          :key="index"
+          class="inline-block my-10 text-7xl"
+        >
           <nuxt-link :to="link.url">
             {{ link.name }}
             <span class="inline-block pb-8">

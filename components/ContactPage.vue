@@ -1,13 +1,13 @@
 <template>
   <div class="container mx-auto text-black bg-white contact">
-    <div class="px-20 pt-10 pb-10">
+    <div class="h-screen p-5 px-20 py-10">
       <div class="text-right">
-        <i class="mt-10 text-4xl cursor-pointer " @click="close">
+        <i class="mt-5 text-4xl cursor-pointer " @click="close">
           &times;
         </i>
       </div>
 
-      <div class="flex pb-10 mt-10 border-b-2 border-black">
+      <div class="flex pb-10 mt-5 border-b-2 border-black">
         <div class="w-6/12 ">
           <h1 class="mb-2 text-black heading heading__primary">
             Get in <br />
@@ -24,16 +24,18 @@
       </div>
 
       <ul class="flex justify-between py-8 border-b-2 border-black">
-        <li v-for="(link, index) in links" :key="index" class="">
+        <li v-for="(link, index) in links" :key="index" class="relative">
           <a
             class="font-bold link-text"
             :href="link.url"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {{ link.name }}
-            <span class="inline-block pb-5">
-              <LinkSvg />
+            <span class="">
+              {{ link.name }}
+            </span>
+            <span class="arrow-icon">
+              <LinkSvg style="width: 12px;" />
             </span>
           </a>
         </li>
@@ -168,5 +170,11 @@ export default {
 <style scoped lang="scss">
 .link-text {
   font-size: 2.5rem;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 13px;
+  right: -1.1rem;
 }
 </style>

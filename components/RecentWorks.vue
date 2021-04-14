@@ -5,8 +5,8 @@
     </h2>
     <span class="block mt-10 mb-32 border-t-2 border-white"></span>
 
-    <nuxt-link to="grain-mate" class="mb-32 card-container">
-      <div class="card-member member-1">
+    <div to="grainmate" class="mb-32 card-container">
+      <nuxt-link to class="card-member member-1">
         <div class="grain jarallax">
           <img src="~/assets/img/GrainMate.png" alt="" class="jarallax-img" />
           <div class="para-img"></div>
@@ -14,12 +14,12 @@
         <h3 class="mt-10 mb-3 text-3xl font-semibold">
           GrainMate mobile
         </h3>
-        <p>
+        <p class="move">
           GrainMate app is supercharging African farmers and agribusinesses with
           the tools and resources they need to get to the next level ⚡️
         </p>
-      </div>
-      <div class="card-member member-2">
+      </nuxt-link>
+      <nuxt-link to class="card-member member-2">
         <div class=" jarallax wacomm">
           <img
             src="~/assets/img/Wacomm-mobile.png"
@@ -31,15 +31,15 @@
         <h3 class="mt-10 mb-3 text-3xl font-semibold">
           Wacomm mobile
         </h3>
-        <p>
+        <p class="move">
           The Geo-social property management app that connects property owners
           and their tenants.
         </p>
-      </div>
-    </nuxt-link>
+      </nuxt-link>
+    </div>
 
     <div class="mb-32 card-container">
-      <div class="card-member member-1">
+      <nuxt-link to class="card-member member-1">
         <div class="adiutor jarallax">
           <img src="~/assets/img/Adiutor.png" alt="" class="jarallax-img" />
           <div class="para-img"></div>
@@ -47,31 +47,27 @@
         <h3 class="mt-10 mb-3 text-3xl font-semibold">
           Adiutor
         </h3>
-        <p>
+        <p class="move">
           Aduitor is attempting to redefine how educational institutions are
           managed in Ghana and Africa as a whole.
         </p>
-      </div>
-      <div class="card-member member-2">
-        <div class=" jarallax">
-          <img
-            src="~/assets/img/Homechow.png"
-            alt=""
-            class="jarallax-img homechow"
-          />
+      </nuxt-link>
+      <nuxt-link to class="card-member member-2">
+        <div class="homechow jarallax">
+          <img src="~/assets/img/Homechow.png" alt="" class="jarallax-img " />
           <div class="para-img"></div>
         </div>
         <h3 class="mt-10 mb-3 text-3xl font-semibold">
           Homechow
         </h3>
-        <p>
+        <p class="move">
           One of Ghana’s best & most promising food delivery startups in 2019
         </p>
-      </div>
+      </nuxt-link>
     </div>
 
     <div class="card-container">
-      <div class="card-member member-1">
+      <nuxt-link to="#" class="card-member member-1">
         <div class="farm jarallax">
           <img src="~/assets/img/Farmforme.png" alt="" class="jarallax-img" />
           <div class="para-img"></div>
@@ -79,28 +75,26 @@
         <h3 class="mt-10 mb-3 text-3xl font-semibold">
           A Farm For Me web
         </h3>
-        <p>
+        <p class="move">
           A Farm For Me is a web app for Africans to invest in virtual farms and
           earn profits.
         </p>
-      </div>
-      <div class="card-member member-2">
-        <div class=" jarallax">
-          <img
-            src="~/assets/img/Microbis.png"
-            alt=""
-            class="jarallax-img microbis"
-          />
+      </nuxt-link>
+      <nuxt-link to="#" class="card-member member-2">
+        <div class="microbis jarallax">
+          <img src="~/assets/img/Microbis.png" alt="" class="jarallax-img " />
           <div class="para-img"></div>
         </div>
         <h3 class="mt-10 mb-3 text-3xl font-semibold">
           MicroBis web
         </h3>
-        <p>
-          MicroBis uses Artificial Intelligence to detect bacteria in samples
-          and suggests possible antibiotics to use to defeat it.
-        </p>
-      </div>
+        <div class=" relatve">
+          <p class="move">
+            MicroBis uses Artificial Intelligence to detect bacteria in samples
+            and suggests possible antibiotics to use to defeat it.
+          </p>
+        </div>
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -123,6 +117,30 @@ export default {
   .para-img {
     height: 35rem;
   }
+
+  /* position: relative; */
+}
+
+.move {
+  transition: all 1s;
+  /* overflow: hidden; */
+}
+
+.move::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px solid white;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  transition: all 1s;
+  transform: translateX(-100%);
+}
+
+.move:hover::before {
+  transform: translateX(0);
 }
 
 .adiutor {
@@ -134,9 +152,7 @@ export default {
 .farm {
   background-color: #84ae73;
 }
-.farm {
-  background-color: #84ae73;
-}
+
 .wacomm {
   background-color: #192a49;
 }
