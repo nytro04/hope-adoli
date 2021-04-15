@@ -1,3 +1,6 @@
+@import './assets/scss/abstracts/mixins';
+
+
 body {
   // font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-family: "Neue Machina";
@@ -29,10 +32,18 @@ body {
   // color: white;
 
   font-weight: 800;
-  &__primary  {
+
+  &__primary {
     font-size: 4rem;
     line-height: 1;
-// line-height: 150;
+    // line-height: 150;
+ @include respond(tab-land) {
+   font-size: 3rem;
+ }
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
 
   }
 
@@ -50,4 +61,8 @@ body {
 
 p {
   // font-size: 1rem;
+
+   @include respond(tab-port) {
+     font-size: .8rem;
+   }
 }

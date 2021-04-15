@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto sm:px-10">
     <transition name="slide">
       <div v-if="open" class="slidein">
         <ContactPage :close="toggle" />
