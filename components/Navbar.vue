@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex justify-between py-4 border-b-2 border-white">
+  <nav class="flex justify-between py-4 border-b-2 border-white nav--main">
     <nuxt-link to="/" class="heading heading__tertiary">
       HOPE ADOLI
       <span v-if="$nuxt.$route.path !== '/'" class="text-gray-400">
@@ -31,4 +31,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped lang="scss">
+@import './assets/scss/abstracts/_mixins.scss';
+
+.nav--main {
+  @include respond(phone) {
+    margin: 2rem 1rem 0 1rem;
+  }
+}
+</style>

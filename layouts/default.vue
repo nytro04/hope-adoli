@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto sm:px-10">
+  <div class="container mx-auto sm:px-10 main--layout">
     <transition name="slide">
       <div v-if="open" class="slidein">
         <ContactPage :close="toggle" />
@@ -46,7 +46,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import '../assets/scss/abstracts/_mixins.scss';
+
 .slidein {
   max-width: 60rem;
 
