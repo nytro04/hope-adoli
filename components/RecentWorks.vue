@@ -5,13 +5,13 @@
     </h2>
     <span class="block mt-10 mb-32 border-t-2 border-white"></span>
 
-    <div to="grainmate" class="mb-32 card-container">
-      <nuxt-link to class="card-member member-1">
+    <div class="mb-32 card-container">
+      <nuxt-link to="grainmate" class="card-member member-1">
         <div class="grain jarallax">
           <img src="~/assets/img/GrainMate.png" alt="" class="jarallax-img" />
           <div class="para-img"></div>
         </div>
-        <h3 class="mt-10 mb-3 text-3xl font-semibold">
+        <h3 class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl">
           GrainMate mobile
         </h3>
         <p class="move">
@@ -28,7 +28,7 @@
           />
           <div class="para-img"></div>
         </div>
-        <h3 class="mt-10 mb-3 text-3xl font-semibold">
+        <h3 class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl">
           Wacomm mobile
         </h3>
         <p class="move">
@@ -44,7 +44,7 @@
           <img src="~/assets/img/Adiutor.png" alt="" class="jarallax-img" />
           <div class="para-img"></div>
         </div>
-        <h3 class="mt-10 mb-3 text-3xl font-semibold">
+        <h3 class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl">
           Adiutor
         </h3>
         <p class="move">
@@ -57,7 +57,7 @@
           <img src="~/assets/img/Homechow.png" alt="" class="jarallax-img " />
           <div class="para-img"></div>
         </div>
-        <h3 class="mt-10 mb-3 text-3xl font-semibold">
+        <h3 class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl">
           Homechow
         </h3>
         <p class="move">
@@ -72,7 +72,7 @@
           <img src="~/assets/img/Farmforme.png" alt="" class="jarallax-img" />
           <div class="para-img"></div>
         </div>
-        <h3 class="mt-10 mb-3 text-3xl font-semibold">
+        <h3 class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl">
           A Farm For Me web
         </h3>
         <p class="move">
@@ -85,7 +85,7 @@
           <img src="~/assets/img/Microbis.png" alt="" class="jarallax-img " />
           <div class="para-img"></div>
         </div>
-        <h3 class="mt-10 mb-3 text-3xl font-semibold">
+        <h3 class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl">
           MicroBis web
         </h3>
         <div class=" relatve">
@@ -106,6 +106,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import './assets/scss/abstracts/_mixins.scss';
+
 .card-container {
   height: 80vh;
   display: grid;
@@ -114,9 +116,31 @@ export default {
   /* grid-template-rows: auto 1fr 1fr 2fr 1fr 1fr; */
   grid-template-rows: repeat(6, 1fr);
 
+  @include respond(tab-land) {
+    column-gap: 8rem;
+  }
+  @include respond(tab-port) {
+    column-gap: 8rem;
+    height: 50vh;
+  }
+
   .para-img {
     height: 35rem;
+
+    @include respond(tab-land) {
+      height: 28rem;
+    }
+    @include respond(tab-port) {
+      height: 23rem;
+    }
   }
+
+  /* @include respond(tab-port) {
+    height: 4.875rem;
+  } */
+  /* @include respond(phone) {
+    height: 4.875rem;
+  } */
 
   /* position: relative; */
 }
