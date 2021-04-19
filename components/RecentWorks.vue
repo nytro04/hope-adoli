@@ -1,6 +1,6 @@
 <template>
   <div class="recent-works">
-    <h2 class="text-6xl font-semibold text-right">
+    <h2 class="mr-5 font-semibold text-right heading heading__primary">
       Recent works
     </h2>
     <span class="block mt-10 mb-32 border-t-2 border-white"></span>
@@ -119,9 +119,15 @@ export default {
   @include respond(tab-land) {
     column-gap: 8rem;
   }
+
   @include respond(tab-port) {
     column-gap: 8rem;
     height: 50vh;
+  }
+
+  @include respond(phone) {
+    display: block;
+    height: 30vh;
   }
 
   .para-img {
@@ -130,8 +136,14 @@ export default {
     @include respond(tab-land) {
       height: 28rem;
     }
+
     @include respond(tab-port) {
       height: 23rem;
+    }
+
+    @include respond(phone) {
+      height: 20rem;
+      width: 80%;
     }
   }
 
@@ -192,6 +204,12 @@ export default {
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 5;
+
+  @include respond(phone) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+  }
 }
 .member-2 {
   grid-row-start: 2;
