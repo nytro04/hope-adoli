@@ -5,13 +5,13 @@
     </h2>
     <span class="block mt-10 mb-32 border-t-2 border-white"></span>
 
-    <div class="mb-32 card-container">
+    <div class="lg:mb-32 card-container">
       <nuxt-link to="grainmate" class="card-member member-1">
         <div class="grain jarallax">
           <img src="~/assets/img/GrainMate.png" alt="" class="jarallax-img" />
           <div class="para-img"></div>
         </div>
-        <h3 class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl">
+        <h3 class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob">
           GrainMate mobile
         </h3>
         <p class="move">
@@ -28,7 +28,9 @@
           />
           <div class="para-img"></div>
         </div>
-        <h3 class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl">
+        <h3
+          class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
+        >
           Wacomm mobile
         </h3>
         <p class="move">
@@ -44,7 +46,9 @@
           <img src="~/assets/img/Adiutor.png" alt="" class="jarallax-img" />
           <div class="para-img"></div>
         </div>
-        <h3 class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl">
+        <h3
+          class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
+        >
           Adiutor
         </h3>
         <p class="move">
@@ -57,7 +61,9 @@
           <img src="~/assets/img/Homechow.png" alt="" class="jarallax-img " />
           <div class="para-img"></div>
         </div>
-        <h3 class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl">
+        <h3
+          class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
+        >
           Homechow
         </h3>
         <p class="move">
@@ -72,7 +78,9 @@
           <img src="~/assets/img/Farmforme.png" alt="" class="jarallax-img" />
           <div class="para-img"></div>
         </div>
-        <h3 class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl">
+        <h3
+          class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
+        >
           A Farm For Me web
         </h3>
         <p class="move">
@@ -85,15 +93,17 @@
           <img src="~/assets/img/Microbis.png" alt="" class="jarallax-img " />
           <div class="para-img"></div>
         </div>
-        <h3 class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl">
+        <h3
+          class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
+        >
           MicroBis web
         </h3>
-        <div class=" relatve">
-          <p class="move">
-            MicroBis uses Artificial Intelligence to detect bacteria in samples
-            and suggests possible antibiotics to use to defeat it.
-          </p>
-        </div>
+        <!-- <div class=" relatve"> -->
+        <p class="move">
+          MicroBis uses Artificial Intelligence to detect bacteria in samples
+          and suggests possible antibiotics to use to defeat it.
+        </p>
+        <!-- </div> -->
       </nuxt-link>
     </div>
   </div>
@@ -107,6 +117,12 @@ export default {
 
 <style scoped lang="scss">
 @import './assets/scss/abstracts/_mixins.scss';
+
+.text-c-mob {
+  @include respond(phone) {
+    text-align: center;
+  }
+}
 
 .card-container {
   height: 80vh;
@@ -127,7 +143,8 @@ export default {
 
   @include respond(phone) {
     display: block;
-    height: 30vh;
+    /* height: 150vh; */
+    height: auto;
   }
 
   .para-img {
@@ -142,7 +159,7 @@ export default {
     }
 
     @include respond(phone) {
-      height: 20rem;
+      height: 25rem;
       width: 80%;
     }
   }
@@ -160,6 +177,11 @@ export default {
 .move {
   transition: all 1s;
   /* overflow: hidden; */
+
+  @include respond(phone) {
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+  }
 }
 
 .move::before {
@@ -192,6 +214,7 @@ export default {
 .wacomm {
   background-color: #192a49;
 }
+
 .homechow {
   background-color: #e1c098;
 }
@@ -206,15 +229,19 @@ export default {
   grid-row-end: 5;
 
   @include respond(phone) {
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-row-end: 3;
+    /* grid-column: auto;
+    grid-row: auto; */
   }
 }
 .member-2 {
   grid-row-start: 2;
   grid-column-start: 2;
   grid-row-end: 5;
+
+  @include respond(phone) {
+    /* grid-column: auto;
+    grid-row: auto; */
+  }
 }
 
 .recent-bg {
