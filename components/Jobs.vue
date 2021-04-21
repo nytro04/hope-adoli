@@ -1,14 +1,24 @@
 <template>
   <div class="full-width ">
-    <div
-      class="flex px-16 space-x-32 scroller heading heading__primary whitespace-nowrap"
-    >
-      <p>MTN Ghana</p>
-      <p>Walulel</p>
-      <p>Sesi Technologies</p>
-      <p>Homechow.io</p>
-      <p>Accra Hearts of Oak</p>
-      <p>9+ others</p>
+    <div class="flex px-16 space-x-32 scroller whitespace-nowrap">
+      <p class="heading heading__primary">
+        MTN Ghana
+      </p>
+      <p class="heading heading__primary">
+        Walulel
+      </p>
+      <p class="heading heading__primary">
+        Sesi Technologies
+      </p>
+      <p class="heading heading__primary">
+        Homechow.io
+      </p>
+      <p class="heading heading__primary">
+        Accra Hearts of Oak
+      </p>
+      <p class="heading heading__primary">
+        9+ others
+      </p>
     </div>
   </div>
 </template>

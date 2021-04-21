@@ -65,6 +65,7 @@ p {
   // font-size: 1rem;
 
   @include respond(tab-port) {
-    font-size: .8rem;
+    font-size: 1rem;
+    line-height: 1.3;
   }
 }

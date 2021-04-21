@@ -6,11 +6,11 @@
     <Video />
     <div class="my-64"></div>
     <RecentWorks />
-    <div class=" mt-80"></div>
+    <div class=" my-80"></div>
 
     <Jobs />
 
-    <div class="mt-32"></div>
+    <div class="mt-80"></div>
     <Links />
     <div class="my-64"></div>
     <!-- <Footer /> -->

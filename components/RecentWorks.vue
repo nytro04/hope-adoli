@@ -120,7 +120,8 @@ export default {
 
 .text-c-mob {
   @include respond(phone) {
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 2rem;
   }
 }
 
@@ -134,11 +135,14 @@ export default {
 
   @include respond(tab-land) {
     column-gap: 8rem;
+    height: 90vh;
+    margin-bottom: 0;
   }
 
   @include respond(tab-port) {
     column-gap: 8rem;
-    height: 50vh;
+    height: 70vh;
+    margin-bottom: 0;
   }
 
   @include respond(phone) {
@@ -155,7 +159,7 @@ export default {
     }
 
     @include respond(tab-port) {
-      height: 23rem;
+      height: 25rem;
     }
 
     @include respond(phone) {

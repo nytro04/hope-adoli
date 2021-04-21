@@ -17,7 +17,7 @@
         <li
           v-for="(link, index) in links"
           :key="index"
-          class="inline-block my-10 text-7xl"
+          class="inline-block my-10 lg:text-7xl sm:text-3xl"
         >
           <nuxt-link :to="link.url">
             {{ link.name }}
