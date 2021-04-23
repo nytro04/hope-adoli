@@ -1,30 +1,35 @@
 <template>
   <div class="url">
-    <h2 class="text-6xl font-semibold text-right">
+    <h2 class="font-semibold text-right heading heading__primary">
       Links
     </h2>
     <span class="block mt-10 mb-32 border-t-2 border-white"></span>
 
     <div class="">
-      <h3 class="mb-10 text-7xl">
+      <h3 class="mb-10 sm:ml-5 heading__links">
         Get In touch
       </h3>
 
-      <button class="my-10 text-7xl">
+      <button class="my-10 sm:ml-5 heading__links">
         UX on Campus
       </button>
       <ul>
         <li
           v-for="(link, index) in links"
           :key="index"
-          class="inline-block my-10 lg:text-7xl sm:text-3xl"
+          class="inline-block my-10 heading__links"
         >
-          <nuxt-link :to="link.url">
+          <a
+            class=""
+            :href="link.url"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {{ link.name }}
             <span class="inline-block pb-8">
               <LinkSvg />
             </span>
-          </nuxt-link>
+          </a>
         </li>
       </ul>
     </div>

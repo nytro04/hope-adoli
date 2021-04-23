@@ -61,6 +61,38 @@ body {
   }
 }
 
+.heading__links {
+  font-size: 4.5rem;
+
+  @include respond(tab-land) {
+    font-size: 3.4rem;
+    margin-left: 2rem;
+
+    svg {
+      height: 1rem;
+    }
+  }
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+    margin-left: 2rem;
+
+     svg {
+       height: 1rem;
+     }
+  }
+
+  @include respond(phone) {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: .5rem;
+
+     svg {
+       height: .5rem;
+     }
+  }
+}
+
 p {
   // font-size: 1rem;
 
