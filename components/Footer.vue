@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <div class="flex justify-between py-5 border-t-2 border-white">
+    <div class="flex justify-between py-5 border-t-2 border-white res-mob">
       <p class="">
         &#169; uxkafui
       </p>
@@ -55,13 +55,19 @@ export default {
 
 p {
   @include respond(phone) {
-    font-size: 0.6rem;
+    font-size: 0.42rem;
+  }
+}
+
+.res-mob > * {
+  @include respond(phone) {
+    margin: 0 1rem;
   }
 }
 
 .footer {
   @include respond(phone) {
-    font-size: 0.6rem;
+    font-size: 0.42rem;
   }
 }
 </style>

@@ -2,9 +2,9 @@
   <!-- <div class="relative"> -->
   <div class="overflow-hidden">
     <LandingPage />
-    <div class="my-64"></div>
+    <div class="my-72"></div>
     <Video />
-    <div class="my-64"></div>
+    <div class="my-72"></div>
     <RecentWorks />
     <div class=" my-80"></div>
 
