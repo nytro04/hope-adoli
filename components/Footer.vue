@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="flex justify-between py-5 border-t-2 border-white">
-      <p class="w-1/4">
+      <p class="">
         &#169; uxkafui
       </p>
       <p>2021 folio</p>
@@ -50,4 +50,18 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped lang="scss">
+@import './assets/scss/abstracts/mixins';
+
+p {
+  @include respond(phone) {
+    font-size: 0.6rem;
+  }
+}
+
+.footer {
+  @include respond(phone) {
+    font-size: 0.6rem;
+  }
+}
+</style>
