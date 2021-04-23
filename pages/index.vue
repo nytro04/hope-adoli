@@ -12,7 +12,7 @@
 
     <div class="mt-80"></div>
     <Links />
-    <div class="my-64"></div>
+    <div class="my-40"></div>
     <!-- <Footer /> -->
   </div>
 </template>

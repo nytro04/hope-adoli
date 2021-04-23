@@ -79,6 +79,7 @@ body {
 
      svg {
        height: 1rem;
+
      }
   }
 
@@ -87,8 +88,13 @@ body {
     margin-left: 2rem;
     margin-bottom: .5rem;
 
+    span {
+      padding-bottom: 1rem;
+    }
+
      svg {
        height: .5rem;
+
      }
   }
 }

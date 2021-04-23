@@ -26,7 +26,7 @@
             rel="noopener noreferrer"
           >
             {{ link.name }}
-            <span class="inline-block pb-8">
+            <span class="inline-block pb-8 ">
               <LinkSvg />
             </span>
           </a>
