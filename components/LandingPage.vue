@@ -28,7 +28,7 @@
             across Ghana.
           </p>
         </div>
-        <div class="relative">
+        <div class="relative svg-mobile">
           <ArrowBadgeSvg class="absolute w-20 h-20 right-2 top-2 " />
           <ArrowDownSvg class="absolute w-10 h-10 right-6 top-6" />
         </div>
@@ -86,6 +86,15 @@ export default {
   @include respond(phone) {
     position: absolute;
     top: 26rem;
+  }
+}
+
+.svg-mobile {
+  @include respond(phone) {
+    svg {
+      display: none;
+      visibility: hidden;
+    }
   }
 }
 
