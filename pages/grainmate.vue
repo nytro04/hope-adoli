@@ -25,9 +25,14 @@
         </p>
 
         <div class="mt-8">
-          <nuxt-link to="" class="font-semibold">
+          <a
+            class="font-bold"
+            href="https://play.google.com/store/apps/details?id=com.sesitechnologies.grainmateapp&hl=en&gl=US"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Download on Google Playstore
-          </nuxt-link>
+          </a>
         </div>
       </div>
     </div>
