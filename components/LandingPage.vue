@@ -18,7 +18,7 @@
 
         <div class="mt-10 content">
           <p class="">
-            With over 3 years experience in building digital products that users
+            With 4+ years experience in building digital products that users
             love and cherish, I have worked mostly with startups in Food tech,
             Agri-tech, Health, Fin-tech, Social Media & Education.
           </p>

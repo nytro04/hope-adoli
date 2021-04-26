@@ -100,8 +100,8 @@
         </h3>
         <!-- <div class=" relatve"> -->
         <p class="move">
-          MicroBis uses Artificial Intelligence to detect bacteria in samples
-          and suggests possible antibiotics to use to defeat it.
+          MicroBis helps laboratory scientist to detect bacteria in samples and
+          suggests possible antibiotics it will be susceptible to.
         </p>
         <!-- </div> -->
       </nuxt-link>

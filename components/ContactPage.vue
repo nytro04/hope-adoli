@@ -79,7 +79,7 @@
                   UX Consultation
                 </option>
                 <option value="">
-                  General Enquiry
+                  General Inquiry
                 </option>
               </select>
             </div>
