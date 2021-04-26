@@ -93,7 +93,6 @@ export default {
   @include respond(phone) {
     svg {
       display: none;
-      visibility: hidden;
     }
   }
 }

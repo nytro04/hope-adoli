@@ -71,16 +71,16 @@
                 class="inline-block w-full px-3 py-3 mb-3 bg-gray-200 "
               >
                 <option value="">
-                  Interested In ?
+                  UI/UX Design
                 </option>
                 <option value="">
-                  Interested In
+                  UX Audit
                 </option>
                 <option value="">
-                  Interested In ?
+                  UX Consultation
                 </option>
                 <option value="">
-                  Interested In ?
+                  General Enquiry
                 </option>
               </select>
             </div>
@@ -91,16 +91,19 @@
                 class="inline-block w-full px-3 py-3 mb-3 bg-gray-200"
               >
                 <option value="">
-                  What's your budget range
+                  Less than $3,500
                 </option>
                 <option value="">
-                  Interested In
+                  $3,600 - $5,000
                 </option>
                 <option value="">
-                  Interested In ?
+                  $6,000 - $9,000
                 </option>
                 <option value="">
-                  Interested In ?
+                  More than $10,000
+                </option>
+                <option value="">
+                  No budget yet 🙁
                 </option>
               </select>
             </div>
