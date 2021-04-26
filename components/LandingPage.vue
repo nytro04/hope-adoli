@@ -19,13 +19,13 @@
         <div class="mt-10 content">
           <p class="">
             With 4+ years experience in building digital products that users
-            love and cherish, I have worked mostly with startups in Food tech,
+            love and cherish, I have worked mostly with startups in Food-tech,
             Agri-tech, Health, Fin-tech, Social Media & Education.
           </p>
           <p class="mt-5">
-            I am the founder of UX Campus: An Non Profit that seeks to people to
-            fall in love with UX Design, by organising free 1-2 day workshops
-            across Ghana.
+            I am the founder of UX Campus: A Non-Profit that seeks to inspire
+            people to fall in love with UX Design, by organising free 1-2 day
+            workshops across Ghana.
           </p>
         </div>
         <div class="relative svg-mobile">
