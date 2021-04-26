@@ -52,7 +52,6 @@
               class="inline-block w-full px-3 py-2 mb-3 bg-gray-200"
               type="text"
               placeholder="First name"
-              required
             />
 
             <input
@@ -114,6 +113,7 @@
               name=""
               cols="30"
               rows="5"
+              required
               placeholder="Tell me more about your project"
               class="w-full px-3 py-2 mb-3 text-sm bg-gray-200 resize-none"
             ></textarea>
