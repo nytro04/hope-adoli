@@ -13,6 +13,7 @@
       <button class="my-10 sm:ml-5 heading__links">
         UX on Campus
       </button>
+
       <ul>
         <li
           v-for="(link, index) in links"
@@ -26,7 +27,7 @@
             rel="noopener noreferrer"
           >
             {{ link.name }}
-            <span class="inline-block pb-8 ">
+            <span class="inline-block pb-8 svg-icons">
               <LinkSvg />
             </span>
           </a>
@@ -60,4 +61,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+@import './assets/scss/abstracts/mixins';
+
+.svg-icons {
+  @include respond(phone) {
+    height: 0.7rem;
+  }
+}
+</style>
