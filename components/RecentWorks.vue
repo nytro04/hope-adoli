@@ -159,7 +159,11 @@ export default {
     }
 
     @include respond(tab-port) {
-      height: 25rem;
+      height: 28rem;
+    }
+
+    @media (width: 812px) {
+      height: 6rem;
     }
 
     @include respond(phone) {
