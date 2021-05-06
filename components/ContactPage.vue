@@ -37,7 +37,7 @@
               {{ link.name }}
             </span>
             <span class="arrow-icon">
-              <LinkSvg style="width: 12px;" />
+              <LinkSvg />
             </span>
           </a>
         </li>
@@ -208,8 +208,16 @@ export default {
   top: 13px;
   right: -1.1rem;
 
+  svg {
+    width: 12px;
+    @include respond(phone) {
+      width: 6px;
+    }
+  }
+
   @include respond(phone) {
-    right: 5rem;
+    top: 1px;
+    right: -0.5rem;
   }
 }
 </style>
