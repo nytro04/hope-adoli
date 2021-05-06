@@ -58,6 +58,16 @@ export default {
   right: 0;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease-in-out;
+
+  @include respond(tab-land) {
+    width: 45rem;
+  }
+  @include respond(tab-port) {
+    width: 35rem;
+  }
+  @include respond(phone) {
+    width: 25rem;
+  }
 }
 
 .slide-enter,

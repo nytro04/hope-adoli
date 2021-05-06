@@ -163,7 +163,7 @@ export default {
     }
 
     @media (width: 812px) {
-      height: 6rem;
+      height: 8rem;
     }
 
     @include respond(phone) {

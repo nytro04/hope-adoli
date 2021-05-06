@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto text-black bg-white contact">
-    <div class="h-screen p-5 px-20 py-10">
+  <div class="container h-auto mx-auto text-black bg-white contact">
+    <div class="h-screen px-5 py-4 md:py-10 md:px-10 lg:px-20">
       <div class="flex justify-end">
         <CloseSvg
           class="mt-5 cursor-pointer "
@@ -9,14 +9,14 @@
         />
       </div>
 
-      <div class="flex pb-10 mt-5 border-b-2 border-black">
-        <div class="w-6/12 ">
+      <div class="pb-10 mt-5 border-b-2 border-black md:flex ">
+        <div class="md:w-6/12 ">
           <h1 class="mb-2 text-black heading heading__primary">
             Get in <br />
             touch.
           </h1>
         </div>
-        <div class="w-6/12 mt-12 text-sm">
+        <div class="mt-6 md:mt-12 md:w-6/12">
           <p>
             Thanks in advance for reaching out! Please note that the contact
             form is for work only. If you just want to say hello, then hit me up
@@ -25,7 +25,7 @@
         </div>
       </div>
 
-      <ul class="flex justify-between py-8 border-b-2 border-black">
+      <ul class="flex justify-between py-4 border-b-2 border-black md:py-8">
         <li v-for="(link, index) in links" :key="index" class="relative">
           <a
             class="font-bold link-text"
@@ -43,13 +43,13 @@
         </li>
       </ul>
 
-      <form class="mt-20" @submit.prevent="handleContact">
-        <div class="flex">
-          <div class="w-1/2">
+      <form class="mt-8 lg:mt-20 md:mt-10" @submit.prevent="handleContact">
+        <div class="md:flex">
+          <div class="md:w-1/2">
             <input
               id="firstName"
               name="firstName"
-              class="inline-block w-full px-3 py-2 mb-3 bg-gray-200"
+              class="inline-block w-full px-3 py-1 mb-3 bg-gray-200 md:py-3"
               type="text"
               placeholder="First name"
             />
@@ -57,7 +57,7 @@
             <input
               id="email"
               name="email"
-              class="inline-block w-full px-3 py-2 mb-3 bg-gray-200 "
+              class="inline-block w-full px-3 py-1 mb-3 bg-gray-200 md:py-3 "
               type="email"
               placeholder="Email Address"
               required
@@ -67,7 +67,7 @@
               <select
                 id="interest"
                 name="interest"
-                class="inline-block w-full px-3 py-3 mb-3 bg-gray-200 "
+                class="inline-block w-full px-3 py-2 mb-3 bg-gray-200 md:py-3 "
               >
                 <option value="">
                   UI/UX Design
@@ -87,7 +87,7 @@
               <select
                 id="interest"
                 name="interest"
-                class="inline-block w-full px-3 py-3 mb-3 bg-gray-200"
+                class="inline-block w-full px-3 py-2 mb-3 bg-gray-200 md:py-3"
               >
                 <option value="">
                   Less than $3,500
@@ -107,17 +107,17 @@
               </select>
             </div>
           </div>
-          <div class="w-1/2 ml-8">
+          <div class="md:w-1/2 md:ml-8">
             <textarea
               id=""
               name=""
               cols="30"
-              rows="5"
+              rows="3"
               required
               placeholder="Tell me more about your project"
               class="w-full px-3 py-2 mb-3 text-sm bg-gray-200 resize-none"
             ></textarea>
-            <div class="mt-2 text-right">
+            <div class="mt-2 md:text-right">
               <button class=" btn btn__black">
                 Send message
               </button>
@@ -175,13 +175,41 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import './assets/scss/abstracts/mixins';
+
+.contact {
+  @include respond(phone) {
+    padding: 0 3rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
 .link-text {
   font-size: 2.5rem;
+
+  @include respond(tab-land) {
+    font-size: 1.5rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 1.5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1rem;
+  }
 }
 
 .arrow-icon {
   position: absolute;
   top: 13px;
   right: -1.1rem;
+
+  @include respond(phone) {
+    right: 5rem;
+  }
 }
 </style>
