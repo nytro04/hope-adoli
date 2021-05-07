@@ -218,9 +218,27 @@ export default {
 
   svg {
     width: 12px;
+    @include respond(tab-land) {
+      width: 10px;
+    }
+
+    @include respond(tab-port) {
+      width: 8px;
+    }
+
     @include respond(phone) {
       width: 6px;
     }
+  }
+
+  @include respond(tab-land) {
+    top: 5px;
+    right: -0.8rem;
+  }
+
+  @include respond(tab-port) {
+    top: 8px;
+    right: -0.9rem;
   }
 
   @include respond(phone) {
