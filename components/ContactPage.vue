@@ -1,5 +1,7 @@
 <template>
-  <div class="container h-auto mx-auto text-black bg-white contact">
+  <div
+    class="container h-auto mx-auto overflow-y-auto text-black bg-white contact"
+  >
     <div class="h-screen px-5 py-4 md:py-10 md:px-10 lg:px-20">
       <div class="flex justify-end">
         <CloseSvg
@@ -67,8 +69,11 @@
               <select
                 id="interest"
                 name="interest"
-                class="inline-block w-full px-3 py-2 mb-3 bg-gray-200 md:py-3 "
+                class="inline-block w-full px-2 py-2 mb-3 bg-gray-200 md:py-3 "
               >
+                <option value="">
+                  Interested in...
+                </option>
                 <option value="">
                   UI/UX Design
                 </option>
@@ -87,8 +92,11 @@
               <select
                 id="interest"
                 name="interest"
-                class="inline-block w-full px-3 py-2 mb-3 bg-gray-200 md:py-3"
+                class="inline-block w-full px-2 py-2 mb-3 bg-gray-200 md:py-3"
               >
+                <option value="">
+                  What's your budget range?
+                </option>
                 <option value="">
                   Less than $3,500
                 </option>
