@@ -219,31 +219,36 @@ export default {
   svg {
     width: 12px;
     @include respond(tab-land) {
-      width: 10px;
+      transform: scale(1);
     }
 
     @include respond(tab-port) {
-      width: 8px;
+      transform: scale(0.9);
     }
 
     @include respond(phone) {
-      width: 6px;
+      transform: scale(0.5);
     }
   }
 
   @include respond(tab-land) {
     top: 5px;
-    right: -0.8rem;
-  }
-
-  @include respond(tab-port) {
-    top: 8px;
     right: -0.9rem;
   }
 
+  @include respond(tab-port) {
+    top: 3px;
+    right: -0.9rem;
+  }
+  /*
+  @include respond(tab-port) {
+    top: 8px;
+    right: -0.9rem;
+  } */
+
   @include respond(phone) {
     top: 1px;
-    right: -0.5rem;
+    right: -0.7rem;
   }
 }
 </style>
