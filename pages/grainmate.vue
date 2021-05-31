@@ -87,39 +87,19 @@
 
     <div class="mt-32 card-container">
       <div class="card-member member-1">
-        <div class="first-img jarallax">
-          <img src="~/assets/img/img-01.png" alt="" class="jarallax-img" />
-          <div class="para-img"></div>
-        </div>
+        <img src="~/assets/img/new/grainmate/img-01.png" alt="" />
       </div>
       <div class="card-member member-2">
-        <div class=" jarallax">
-          <img
-            src="~/assets/img/img-02.png"
-            alt=""
-            class="jarallax-img wa-bg"
-          />
-          <div class="para-img"></div>
-        </div>
+        <img src="~/assets/img/new/grainmate/img-02.png" alt="" />
       </div>
     </div>
 
     <div class="mb-32 card-container">
       <div class="card-member member-1">
-        <div class="first-img jarallax">
-          <img src="~/assets/img/img-03.png" alt="" class="jarallax-img" />
-          <div class="para-img"></div>
-        </div>
+        <img src="~/assets/img/new/grainmate/img-03.png" alt="" />
       </div>
       <div class="card-member member-2">
-        <div class=" jarallax">
-          <img
-            src="~/assets/img/img-04.png"
-            alt=""
-            class="jarallax-img wa-bg"
-          />
-          <div class="para-img"></div>
-        </div>
+        <img src="~/assets/img/new/grainmate/img-04.png" alt="" />
       </div>
     </div>
 
@@ -144,39 +124,19 @@
 
     <div class="mb-32 card-container">
       <div class="card-member member-1">
-        <div class="first-img jarallax">
-          <img src="~/assets/img/img-06.png" alt="" class="jarallax-img" />
-          <div class="para-img"></div>
-        </div>
+        <img src="~/assets/img/new/grainmate/img-05.png" alt="" />
       </div>
       <div class="card-member member-2">
-        <div class=" jarallax">
-          <img
-            src="~/assets/img/img-07.png"
-            alt=""
-            class="jarallax-img wa-bg"
-          />
-          <div class="para-img"></div>
-        </div>
+        <img src="~/assets/img/new/grainmate/img-06.png" alt="" />
       </div>
     </div>
 
     <div class="mb-32 card-container">
       <div class="card-member member-1">
-        <div class="first-img jarallax">
-          <img src="~/assets/img/img-08.png" alt="" class="jarallax-img" />
-          <div class="para-img"></div>
-        </div>
+        <img src="~/assets/img/new/grainmate/img-07.png" alt="" />
       </div>
       <div class="card-member member-2">
-        <div class=" jarallax">
-          <img
-            src="~/assets/img/img-09.png"
-            alt=""
-            class="jarallax-img wa-bg"
-          />
-          <div class="para-img"></div>
-        </div>
+        <img src="~/assets/img/new/grainmate/img-08.png" alt="" />
       </div>
     </div>
 
@@ -197,15 +157,16 @@ export default {}
 
 <style lang="scss" scoped>
 .grain-bg {
-  background-image: url('~/assets/img/hero-section-img.png');
+  background-image: url('~/assets/img/new/grainmate/thumbnail.png');
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-size: cover;
   background-position: center;
   background-color: #11905c;
 }
+
 .grain-bg-2 {
-  background-image: url('~/assets/img/img-05.png');
+  background-image: url('~/assets/img/new/grainmate/video-thumbnail.png');
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -214,8 +175,8 @@ export default {}
 }
 
 .full-width {
-  margin-left: -5rem;
-  margin-right: -5rem;
+  margin-left: -7rem;
+  margin-right: -7rem;
 }
 
 .card-container {
