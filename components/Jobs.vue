@@ -1,6 +1,6 @@
 <template>
-  <div class="full-width ">
-    <div class="flex px-16 space-x-32 scroller whitespace-nowrap">
+  <div class="full-width">
+    <div class="flex px-16 -mx-40 space-x-32 scroller whitespace-nowrap">
       <p class="heading heading__primary">
         MTN Ghana
       </p>
@@ -9,6 +9,9 @@
       </p>
       <p class="heading heading__primary">
         Sesi Technologies
+      </p>
+      <p class="heading heading__primary">
+        Petra Trust
       </p>
       <p class="heading heading__primary">
         Homechow.io

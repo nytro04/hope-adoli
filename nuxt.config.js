@@ -28,10 +28,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    { src: '~/plugins/jarallax.js', ssr: false },
-    { src: '~/plugins/parallax.js', ssr: false }
-  ],
+  plugins: [],
   /*
    ** Nuxt.js dev-modules
    */
