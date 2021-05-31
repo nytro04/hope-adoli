@@ -17,7 +17,8 @@
     "@nuxtjs/svg": "^0.1.12",
     "jarallax": "^1.12.5",
     "nuxt": "^2.0.0",
-    "object-fit-images": "^3.2.4"
+    "object-fit-images": "^3.2.4",
+    "vue-parallaxy": "^1.1.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",

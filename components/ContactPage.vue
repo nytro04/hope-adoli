@@ -240,6 +240,7 @@ export default {
     top: 3px;
     right: -0.9rem;
   }
+
   /*
   @include respond(tab-port) {
     top: 8px;
