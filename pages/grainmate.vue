@@ -1,7 +1,7 @@
 <template>
   <div class="my-40 grain-mate">
-    <div class="flex justify-between">
-      <div class="w-6/12">
+    <div class="lg:justify-between lg:flex">
+      <div class="lg:w-6/12">
         <h1 class="heading heading__primary">
           GrainMate <br />
           mobile app
@@ -11,7 +11,7 @@
         </p>
       </div>
 
-      <div class="w-6/12">
+      <div class="lg:w-6/12">
         <h3 class="mb-6 text-4xl font-bold text-gray-400">
           Overview
         </h3>
@@ -41,7 +41,7 @@
       <div class="mt-20 grain-bg"></div>
     </div>
 
-    <div class="w-5/12">
+    <div class="lg:w-5/12">
       <h3 class="mb-6 text-4xl font-bold text-gray-400">
         The challenge
       </h3>
@@ -67,15 +67,15 @@
       </p>
     </div>
 
-    <div class="flex justify-end mt-10">
-      <img class="w-4/6 h-3/4" src="~/assets/img/farmer-img.png" alt="" />
+    <div class="mt-10 lg:flex lg:justify-end">
+      <img class="lg:w-4/6 lg:h-3/4" src="~/assets/img/farmer-img.png" alt="" />
     </div>
 
-    <div class="flex justify-between mt-40">
-      <h3 class="w-5/12 mb-6 text-4xl font-bold">
+    <div class="mt-40 lg:flex lg:justify-between">
+      <h3 class="mb-6 text-4xl font-bold lg:w-5/12">
         A beautiful design that solves problems.
       </h3>
-      <p class="w-6/12 text-gray-400">
+      <p class="text-gray-400 lg:w-6/12">
         From our UX research of the 4 main target users, it became evident that
         the farmers were going to need the most help navigating the app. In
         order to help them do so easily, I used colours on the backgrounds of
@@ -86,28 +86,28 @@
     </div>
 
     <div class="mt-32 card-container">
-      <div class="card-member member-1">
+      <div class="mt-10 card-member member-1">
         <img src="~/assets/img/new/grainmate/img-01.png" alt="" />
       </div>
-      <div class="card-member member-2">
+      <div class="mt-10 card-member member-2">
         <img src="~/assets/img/new/grainmate/img-02.png" alt="" />
       </div>
     </div>
 
     <div class="mb-32 card-container">
-      <div class="card-member member-1">
+      <div class="mt-10 card-member member-1">
         <img src="~/assets/img/new/grainmate/img-03.png" alt="" />
       </div>
-      <div class="card-member member-2">
+      <div class="mt-10 card-member member-2">
         <img src="~/assets/img/new/grainmate/img-04.png" alt="" />
       </div>
     </div>
 
-    <div class="flex justify-between mt-40">
-      <h3 class="w-5/12 mb-6 text-4xl font-bold">
+    <div class="mt-40 lg:flex lg:justify-between">
+      <h3 class="mb-6 text-4xl font-bold lg:w-5/12">
         Designing for 10,000+ unique set of target user base.
       </h3>
-      <p class="w-6/12 text-gray-400">
+      <p class="text-gray-400 lg:w-6/12">
         One of the most exciting things about this project was unlearning most
         things I knew about farming and agriculture as a whole, and then
         learning new behaviours from farmers, warehouse managers,
@@ -123,29 +123,29 @@
     </div>
 
     <div class="mb-32 card-container">
-      <div class="card-member member-1">
+      <div class="mt-10 card-member member-1">
         <img src="~/assets/img/new/grainmate/img-05.png" alt="" />
       </div>
-      <div class="card-member member-2">
+      <div class="mt-10 card-member member-2">
         <img src="~/assets/img/new/grainmate/img-06.png" alt="" />
       </div>
     </div>
 
     <div class="mb-32 card-container">
-      <div class="card-member member-1">
+      <div class="mt-10 card-member member-1">
         <img src="~/assets/img/new/grainmate/img-07.png" alt="" />
       </div>
-      <div class="card-member member-2">
+      <div class="mt-10 card-member member-2">
         <img src="~/assets/img/new/grainmate/img-08.png" alt="" />
       </div>
     </div>
 
     <span class="block mt-10 mb-32 border-t-2 border-white"></span>
-    <h3 class="mb-10 text-7xl">
+    <h3 class="mb-10 lg:text-7xl md:text-4xl sm:text-3xl">
       Get In touch
     </h3>
 
-    <h2 class="w-4/5 my-10 text-7xl">
+    <h2 class="w-4/5 my-10 lg:text-7xl md:text-4xl sm:text-3xl">
       Other projects: Wacomm, Adiutor, Homechow, Farm For Me, MicroBis
     </h2>
   </div>
@@ -156,13 +156,25 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+@import './assets/scss/abstracts/_mixins.scss';
+
+.grain-mate {
+  @include respond(phone) {
+    padding: 0 2rem;
+  }
+}
+
 .grain-bg {
   background-image: url('~/assets/img/new/grainmate/thumbnail.png');
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-color: #11905c;
+
+  @include respond(phone) {
+    height: 60vh;
+  }
 }
 
 .grain-bg-2 {
@@ -187,9 +199,53 @@ export default {}
   /* grid-template-rows: auto 1fr 1fr 2fr 1fr 1fr; */
   grid-template-rows: repeat(6, 1fr);
 
+  @include respond(tab-land) {
+    column-gap: 8rem;
+    height: 90vh;
+    margin-bottom: 0;
+  }
+
+  @include respond(tab-port) {
+    column-gap: 8rem;
+    height: 70vh;
+    margin-bottom: 0;
+  }
+
+  @include respond(phone) {
+    display: block;
+    /* height: 150vh; */
+    height: auto;
+  }
+
   .para-img {
     height: 35rem;
+
+    @include respond(tab-land) {
+      height: 28rem;
+    }
+
+    @include respond(tab-port) {
+      height: 28rem;
+    }
+
+    @media (width: 812px) {
+      height: 8rem;
+    }
+
+    @include respond(phone) {
+      height: 25rem;
+      width: 80%;
+    }
   }
+
+  /* @include respond(tab-port) {
+    height: 4.875rem;
+  } */
+  /* @include respond(phone) {
+    height: 4.875rem;
+  } */
+
+  /* position: relative; */
 }
 
 .member-1 {
@@ -197,6 +253,7 @@ export default {}
   grid-column-start: 1;
   grid-row-end: 5;
 }
+
 .member-2 {
   grid-row-start: 2;
   grid-column-start: 2;
