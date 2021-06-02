@@ -1,18 +1,18 @@
 <template>
-  <div class="my-40 grain-mate">
+  <div class="my-40 overflow-hidden grain-mate">
     <div class="lg:justify-between lg:flex">
       <div class="lg:w-6/12">
         <h1 class="heading heading__primary">
           GrainMate <br />
           mobile app
         </h1>
-        <p class="mt-8 text-gray-400">
+        <p class="mt-8 mb-10 text-gray-400">
           Sesi technologies • 2020
         </p>
       </div>
 
-      <div class="lg:w-6/12">
-        <h3 class="mb-6 text-4xl font-bold text-gray-400">
+      <div class=" lg:w-6/12">
+        <h3 class="mb-6 text-4xl font-bold text-gray-400 ">
           Overview
         </h3>
         <p class="text-gray-400">
@@ -85,20 +85,19 @@
       </p>
     </div>
 
-    <div class="mt-32 card-container">
-      <div class="mt-10 card-member member-1">
+    <div class="mt-20 lg:flex lg:items-center lg:justify-between">
+      <div class="lg:w-5/12 ">
         <img src="~/assets/img/new/grainmate/img-01.png" alt="" />
       </div>
-      <div class="mt-10 card-member member-2">
+      <div class="mt-10 lg:mt-40 lg:w-5/12">
         <img src="~/assets/img/new/grainmate/img-02.png" alt="" />
       </div>
     </div>
-
-    <div class="mb-32 card-container">
-      <div class="mt-10 card-member member-1">
+    <div class="mt-10 lg:flex lg:items-center lg:justify-between">
+      <div class="mb-10 lg:w-5/12">
         <img src="~/assets/img/new/grainmate/img-03.png" alt="" />
       </div>
-      <div class="mt-10 card-member member-2">
+      <div class="lg:mt-40 lg:w-5/12">
         <img src="~/assets/img/new/grainmate/img-04.png" alt="" />
       </div>
     </div>
@@ -122,30 +121,29 @@
       <div class="mt-20 grain-bg-2"></div>
     </div>
 
-    <div class="mb-32 card-container">
-      <div class="mt-10 card-member member-1">
+    <div class="mt-20 lg:flex lg:items-center lg:justify-between">
+      <div class="lg:w-5/12 ">
         <img src="~/assets/img/new/grainmate/img-05.png" alt="" />
       </div>
-      <div class="mt-10 card-member member-2">
+      <div class="mt-10 lg:mt-40 lg:w-5/12">
         <img src="~/assets/img/new/grainmate/img-06.png" alt="" />
       </div>
     </div>
-
-    <div class="mb-32 card-container">
-      <div class="mt-10 card-member member-1">
+    <div class="mt-10 lg:flex lg:items-center lg:justify-between">
+      <div class="mb-10 lg:w-5/12">
         <img src="~/assets/img/new/grainmate/img-07.png" alt="" />
       </div>
-      <div class="mt-10 card-member member-2">
+      <div class="lg:mt-40 lg:w-5/12">
         <img src="~/assets/img/new/grainmate/img-08.png" alt="" />
       </div>
     </div>
 
     <span class="block mt-10 mb-32 border-t-2 border-white"></span>
-    <h3 class="mb-10 lg:text-7xl md:text-4xl sm:text-3xl">
+    <h3 class="mb-10 text-2xl lg:text-6xl md:text-4xl">
       Get In touch
     </h3>
 
-    <h2 class="w-4/5 my-10 lg:text-7xl md:text-4xl sm:text-3xl">
+    <h2 class="my-10 text-2xl lg:text-6xl md:text-4xl">
       Other projects: Wacomm, Adiutor, Homechow, Farm For Me, MicroBis
     </h2>
   </div>
@@ -160,7 +158,7 @@ export default {}
 
 .grain-mate {
   @include respond(phone) {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 }
 
@@ -172,8 +170,16 @@ export default {}
   background-position: center;
   background-color: #11905c;
 
-  @include respond(phone) {
+  @include respond(tab-land) {
     height: 60vh;
+  }
+  @include respond(tab-port) {
+    height: 50vh;
+  }
+
+  @include respond(phone) {
+    height: 30vh;
+    width: 100%;
   }
 }
 
@@ -184,6 +190,17 @@ export default {}
   background-size: cover;
   background-position: center;
   background-color: #66aa8c;
+
+  @include respond(tab-land) {
+    height: 50vh;
+  }
+  @include respond(tab-port) {
+    height: 30vh;
+  }
+  @include respond(phone) {
+    height: 30vh;
+    width: 100%;
+  }
 }
 
 .full-width {
@@ -216,42 +233,22 @@ export default {}
     /* height: 150vh; */
     height: auto;
   }
-
-  .para-img {
-    height: 35rem;
-
-    @include respond(tab-land) {
-      height: 28rem;
-    }
-
-    @include respond(tab-port) {
-      height: 28rem;
-    }
-
-    @media (width: 812px) {
-      height: 8rem;
-    }
-
-    @include respond(phone) {
-      height: 25rem;
-      width: 80%;
-    }
-  }
-
-  /* @include respond(tab-port) {
-    height: 4.875rem;
-  } */
-  /* @include respond(phone) {
-    height: 4.875rem;
-  } */
-
-  /* position: relative; */
 }
 
 .member-1 {
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 5;
+
+  /* @include respond(tab-land) {
+    height: 50vh;
+  }
+  @include respond(tab-port) {
+    height: 30vh;
+  }
+  @include respond(phone) {
+    height: 30vh;
+  } */
 }
 
 .member-2 {

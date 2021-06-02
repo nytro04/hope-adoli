@@ -36,7 +36,7 @@ export default {
 
 .nav--main {
   @include respond(phone) {
-    margin: 2rem 1rem 0 1rem;
+    margin: 0.5rem 1rem 0 1rem;
   }
 }
 </style>
