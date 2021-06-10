@@ -1,6 +1,6 @@
 <template>
   <div class="landing">
-    <div class="relative flex justify-between landing__main">
+    <div class="relative md:justify-between md:flex landing__main">
       <img src="~/assets/img/hope.png" alt="" class="mt-20 hero-image" />
 
       <span class="vertical-line"></span>
