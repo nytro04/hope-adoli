@@ -5,15 +5,10 @@
     </h2>
     <span class="block mt-10 mb-32 border-t-2 border-white"></span>
 
-    <div class="lg:mb-32 card-container">
-      <nuxt-link to="grainmate" class="card-member member-1 move">
-        <div class="">
-          <img src="~/assets/img/new/GrainMate.png" alt="" class="" />
-        </div>
-        <!-- <div class="grain jarallax">
-          <img src="~/assets/img/GrainMate.png" alt="" class="jarallax-img" />
-          <div class="para-img"></div>
-        </div> -->
+    <div class="md:mb-20 md:flex md:items-center md:justify-between">
+      <nuxt-link to="grainmate" class="md:w-5/12 ">
+        <img src="~/assets/img/new/GrainMate.png" alt="" class="" />
+
         <h3 class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob">
           GrainMate mobile
         </h3>
@@ -22,18 +17,9 @@
           the tools and resources they need to get to the next level ⚡️
         </p>
       </nuxt-link>
-      <nuxt-link to class="card-member member-2">
-        <!-- <div class=" jarallax wacomm">
-          <img
-            src="~/assets/img/Wacomm-mobile.png"
-            alt=""
-            class="jarallax-img wa-bg"
-          />
-          <div class="para-img"></div>
-        </div> -->
-        <div class="">
-          <img src="~/assets/img/new/Wacomm.png" alt="" class="" />
-        </div>
+      <nuxt-link to class="md:w-5/12 md:mt-20">
+        <img src="~/assets/img/new/Wacomm.png" alt="" class="" />
+
         <h3
           class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
         >
@@ -46,15 +32,10 @@
       </nuxt-link>
     </div>
 
-    <div class="mb-32 card-container">
-      <nuxt-link to class="card-member member-1">
-        <!-- <div class="adiutor jarallax">
-          <img src="~/assets/img/Adiutor.png" alt="" class="jarallax-img" />
-          <div class="para-img"></div>
-        </div> -->
-        <div class="">
-          <img src="~/assets/img/new/Adiutor.png" alt="" class="" />
-        </div>
+    <div class="md:mb-20 md:flex md:items-center md:justify-between">
+      <nuxt-link to class="md:w-5/12">
+        <img src="~/assets/img/new/Adiutor.png" alt="" class="" />
+
         <h3
           class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
         >
@@ -65,14 +46,9 @@
           managed in Ghana and Africa as a whole.
         </p>
       </nuxt-link>
-      <nuxt-link to class="card-member member-2">
-        <!-- <div class="homechow jarallax">
-          <img src="~/assets/img/Homechow.png" alt="" class="jarallax-img " />
-          <div class="para-img"></div>
-        </div> -->
-        <div class="">
-          <img src="~/assets/img/new/Homechow.png" alt="" class="" />
-        </div>
+      <nuxt-link to class="md:w-5/12 md:mt-20">
+        <img src="~/assets/img/new/Homechow.png" alt="" class="" />
+
         <h3
           class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
         >
@@ -84,15 +60,10 @@
       </nuxt-link>
     </div>
 
-    <div class="card-container">
-      <nuxt-link to="#" class="card-member member-1">
-        <!-- <div class="farm jarallax">
-          <img src="~/assets/img/Farmforme.png" alt="" class="jarallax-img" />
-          <div class="para-img"></div>
-        </div> -->
-        <div class="">
-          <img src="~/assets/img/new/Farm-for-me.png" alt="" class="" />
-        </div>
+    <div class="md:mb-20 md:flex md:items-center md:justify-between">
+      <nuxt-link to="#" class="md:w-5/12">
+        <img src="~/assets/img/new/Farm-for-me.png" alt="" class="" />
+
         <h3
           class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
         >
@@ -103,14 +74,9 @@
           earn profits.
         </p>
       </nuxt-link>
-      <nuxt-link to="#" class="card-member member-2">
-        <!-- <div class="microbis jarallax">
-          <img src="~/assets/img/Microbis.png" alt="" class="jarallax-img " />
-          <div class="para-img"></div>
-        </div> -->
-        <div class="">
-          <img src="~/assets/img/new/Microbis.png" alt="" class="" />
-        </div>
+      <nuxt-link to="#" class="md:w-5/12 md:mt-20">
+        <img src="~/assets/img/new/Microbis.png" alt="" class="" />
+
         <h3
           class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
         >
@@ -255,8 +221,6 @@ export default {
   grid-row-end: 5;
 
   @include respond(phone) {
-    /* grid-column: auto;
-    grid-row: auto; */
   }
 }
 .member-2 {
@@ -265,8 +229,6 @@ export default {
   grid-row-end: 5;
 
   @include respond(phone) {
-    /* grid-column: auto;
-    grid-row: auto; */
   }
 }
 

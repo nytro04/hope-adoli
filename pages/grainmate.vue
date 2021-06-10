@@ -192,10 +192,10 @@ export default {}
   background-color: #66aa8c;
 
   @include respond(tab-land) {
-    height: 50vh;
+    height: 60vh;
   }
   @include respond(tab-port) {
-    height: 30vh;
+    height: 50vh;
   }
   @include respond(phone) {
     height: 30vh;
@@ -208,12 +208,11 @@ export default {}
   margin-right: -7rem;
 }
 
-.card-container {
+/* .card-container {
   height: 80vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 15rem;
-  /* grid-template-rows: auto 1fr 1fr 2fr 1fr 1fr; */
   grid-template-rows: repeat(6, 1fr);
 
   @include respond(tab-land) {
@@ -230,28 +229,20 @@ export default {}
 
   @include respond(phone) {
     display: block;
-    /* height: 150vh; */
+
     height: auto;
   }
-}
+} */
 
-.member-1 {
+/* .member-1 {
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 5;
 
-  /* @include respond(tab-land) {
-    height: 50vh;
-  }
-  @include respond(tab-port) {
-    height: 30vh;
-  }
-  @include respond(phone) {
-    height: 30vh;
-  } */
-}
 
-.member-2 {
+} */
+
+/* .member-2 {
   grid-row-start: 2;
   grid-column-start: 2;
   grid-row-end: 5;
@@ -265,5 +256,5 @@ export default {}
 }
 .fourth-img {
   background-color: #f6dacc;
-}
+} */
 </style>
