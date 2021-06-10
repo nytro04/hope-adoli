@@ -85,19 +85,19 @@
       </p>
     </div>
 
-    <div class="mt-20 lg:flex lg:items-center lg:justify-between">
-      <div class="lg:w-5/12 ">
+    <div class="mt-20 md:flex md:items-center md:justify-between">
+      <div class="md:w-5/12 ">
         <img src="~/assets/img/new/grainmate/img-01.png" alt="" />
       </div>
-      <div class="mt-10 lg:mt-40 lg:w-5/12">
+      <div class="mt-10 lg:mt-40 md:w-5/12">
         <img src="~/assets/img/new/grainmate/img-02.png" alt="" />
       </div>
     </div>
-    <div class="mt-10 lg:flex lg:items-center lg:justify-between">
-      <div class="mb-10 lg:w-5/12">
+    <div class="mt-10 md:flex md:items-center md:justify-between">
+      <div class="mb-10 md:w-5/12">
         <img src="~/assets/img/new/grainmate/img-03.png" alt="" />
       </div>
-      <div class="lg:mt-40 lg:w-5/12">
+      <div class="lg:mt-40 md:w-5/12">
         <img src="~/assets/img/new/grainmate/img-04.png" alt="" />
       </div>
     </div>
@@ -121,19 +121,19 @@
       <div class="mt-20 grain-bg-2"></div>
     </div>
 
-    <div class="mt-20 lg:flex lg:items-center lg:justify-between">
-      <div class="lg:w-5/12 ">
+    <div class="mt-20 md:flex md:items-center md:justify-between">
+      <div class="md:w-5/12 ">
         <img src="~/assets/img/new/grainmate/img-05.png" alt="" />
       </div>
-      <div class="mt-10 lg:mt-40 lg:w-5/12">
+      <div class="mt-10 lg:mt-40 md:w-5/12">
         <img src="~/assets/img/new/grainmate/img-06.png" alt="" />
       </div>
     </div>
-    <div class="mt-10 lg:flex lg:items-center lg:justify-between">
-      <div class="mb-10 lg:w-5/12">
+    <div class="mt-10 md:flex md:items-center md:justify-between">
+      <div class="mb-10 md:w-5/12">
         <img src="~/assets/img/new/grainmate/img-07.png" alt="" />
       </div>
-      <div class="lg:mt-40 lg:w-5/12">
+      <div class="lg:mt-40 md:w-5/12">
         <img src="~/assets/img/new/grainmate/img-08.png" alt="" />
       </div>
     </div>
