@@ -41,3 +41,65 @@ body {
   height: 100%;
   z-index: -1;
 }
+
+// a {
+//   text-decoration: none;
+//   padding: 40px 80px;
+//   font-size: 30px;
+//   color: black;
+//   border: 5px solid black;
+//   position: relative;
+//   transition: all 1s;
+//   overflow: hidden;
+// }
+
+// a::before {
+//   content: '';
+//   position: absolute;
+//   background-color: black;
+//   z-index: -1;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+//   transform: translateX(-100%);
+//   transition: all 1s;
+// }
+
+// a:hover::before {
+//   transform: translateX(0);
+// }
+
+// a:hover {
+//   color: white;
+// }
+
+
+.slider {
+
+   position: relative;
+   transition: all 1s;
+   overflow: hidden;
+
+
+
+   &::before {
+     content: '';
+     position: absolute;
+     background-color: white;
+    //  border-bottom: 2px solid white;
+
+     bottom: 0;
+     left: 0;
+     height: 2%;
+     width: 100%;
+     transform: translateX(-100%);
+     transition: all 1s;
+
+
+   }
+
+   &:hover::before {
+     transform: translateX(0);
+   }
+}

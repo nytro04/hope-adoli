@@ -57,10 +57,16 @@
 export default {}
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import './assets/scss/abstracts/_mixins.scss';
+
 .scroller {
   width: 300%;
   animation: scroll 15s linear infinite;
+
+  @include respond(phone) {
+    width: 700%;
+  }
 }
 
 /* .try > * {

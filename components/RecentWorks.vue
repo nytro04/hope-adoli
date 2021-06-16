@@ -9,13 +9,17 @@
       <nuxt-link to="grainmate" class="md:w-5/12 ">
         <img src="~/assets/img/new/GrainMate.png" alt="" class="" />
 
-        <h3 class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob">
+        <h3
+          class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob move"
+        >
           GrainMate mobile
         </h3>
-        <p class="move">
-          GrainMate app is supercharging African farmers and agribusinesses with
-          the tools and resources they need to get to the next level ⚡️
-        </p>
+        <div class="pb-20 slider">
+          <p class="">
+            GrainMate app is supercharging African farmers and agribusinesses
+            with the tools and resources they need to get to the next level ⚡️
+          </p>
+        </div>
       </nuxt-link>
       <nuxt-link to class="md:w-5/12 md:mt-20">
         <img src="~/assets/img/new/Wacomm.png" alt="" class="" />
@@ -25,10 +29,13 @@
         >
           Wacomm mobile
         </h3>
-        <p class="move">
-          The Geo-social property management app that connects property owners
-          and their tenants.
-        </p>
+
+        <div class="pb-20 slider">
+          <p :class="{ active: hover }" class="move">
+            The Geo-social property management app that connects property owners
+            and their tenants.
+          </p>
+        </div>
       </nuxt-link>
     </div>
 
@@ -41,10 +48,12 @@
         >
           Adiutor
         </h3>
-        <p class="move">
-          Aduitor is attempting to redefine how educational institutions are
-          managed in Ghana and Africa as a whole.
-        </p>
+        <div class="pb-20 slider">
+          <p class="">
+            Aduitor is attempting to redefine how educational institutions are
+            managed in Ghana and Africa as a whole.
+          </p>
+        </div>
       </nuxt-link>
       <nuxt-link to class="md:w-5/12 md:mt-20">
         <img src="~/assets/img/new/Homechow.png" alt="" class="" />
@@ -54,9 +63,11 @@
         >
           Homechow
         </h3>
-        <p class="move">
-          One of Ghana’s best & most promising food delivery startups in 2019
-        </p>
+        <div class="pb-20 slider">
+          <p class="">
+            One of Ghana’s best & most promising food delivery startups in 2019
+          </p>
+        </div>
       </nuxt-link>
     </div>
 
@@ -69,10 +80,13 @@
         >
           A Farm For Me web
         </h3>
-        <p class="move">
-          A Farm For Me is a web app for Africans to invest in virtual farms and
-          earn profits.
-        </p>
+
+        <div class="pb-20 slider">
+          <p class="">
+            A Farm For Me is a web app for Africans to invest in virtual farms
+            and and earn profits.
+          </p>
+        </div>
       </nuxt-link>
       <nuxt-link to="#" class="md:w-5/12 md:mt-20">
         <img src="~/assets/img/new/Microbis.png" alt="" class="" />
@@ -82,12 +96,14 @@
         >
           MicroBis web
         </h3>
-        <!-- <div class=" relatve"> -->
-        <p class="move">
-          MicroBis helps laboratory scientist to detect bacteria in samples and
-          suggests possible antibiotics it will be susceptible to.
-        </p>
-        <!-- </div> -->
+
+        <!-- <p> -->
+        <div class="pb-20 slider">
+          <p class="">
+            MicroBis helps laboratory scientist to detect bacteria in samples
+            and suggests possible antibiotics it will be susceptible to.
+          </p>
+        </div>
       </nuxt-link>
     </div>
   </div>
@@ -95,7 +111,13 @@
 
 <script>
 export default {
-  components: {}
+  components: {},
+
+  data() {
+    return {
+      hover: false
+    }
+  }
 }
 </script>
 
@@ -166,32 +188,25 @@ export default {
   /* position: relative; */
 }
 
-.move {
-  transition: all 1s;
-  /* overflow: hidden; */
-
-  @include respond(phone) {
-    margin-bottom: 4rem;
-    padding: 0 2rem;
-  }
-}
-
-.move::before {
-  content: '';
-  position: absolute;
-  height: 100%;
+/* .line-enter-active,
+.line-leave-enter {
   width: 100%;
-  border-bottom: 2px solid white;
-  z-index: -1;
-  left: 0;
-  bottom: 0;
-  transition: all 1s;
-  transform: translateX(-100%);
+
+  transition: all 0.3s linear;
 }
 
-.move:hover::before {
-  transform: translateX(0);
+.line-enter,
+.line-leave-to {
+  transition: all 0.3s linear;
+
+  width: 0;
 }
+
+.try {
+  border: 2px solid #fff;
+  overflow: hidden;
+  margin-top: 5rem;
+} */
 
 .adiutor {
   background-color: #8c83b0;
