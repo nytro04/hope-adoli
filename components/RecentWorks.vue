@@ -9,12 +9,12 @@
       <nuxt-link to="grainmate" class="md:w-5/12 ">
         <img src="~/assets/img/new/GrainMate.png" alt="" class="" />
 
-        <h3
-          class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob move"
-        >
-          GrainMate mobile
-        </h3>
         <div class="pb-20 slider">
+          <h3
+            class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob move"
+          >
+            GrainMate mobile
+          </h3>
           <p class="">
             GrainMate app is supercharging African farmers and agribusinesses
             with the tools and resources they need to get to the next level ⚡️
@@ -24,13 +24,13 @@
       <nuxt-link to class="md:w-5/12 md:mt-20">
         <img src="~/assets/img/new/Wacomm.png" alt="" class="" />
 
-        <h3
-          class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
-        >
-          Wacomm mobile
-        </h3>
-
         <div class="pb-20 slider">
+          <h3
+            class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
+          >
+            Wacomm mobile
+          </h3>
+
           <p :class="{ active: hover }" class="move">
             The Geo-social property management app that connects property owners
             and their tenants.
@@ -43,12 +43,12 @@
       <nuxt-link to class="md:w-5/12">
         <img src="~/assets/img/new/Adiutor.png" alt="" class="" />
 
-        <h3
-          class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
-        >
-          Adiutor
-        </h3>
         <div class="pb-20 slider">
+          <h3
+            class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
+          >
+            Adiutor
+          </h3>
           <p class="">
             Aduitor is attempting to redefine how educational institutions are
             managed in Ghana and Africa as a whole.
@@ -58,12 +58,12 @@
       <nuxt-link to class="md:w-5/12 md:mt-20">
         <img src="~/assets/img/new/Homechow.png" alt="" class="" />
 
-        <h3
-          class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
-        >
-          Homechow
-        </h3>
         <div class="pb-20 slider">
+          <h3
+            class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
+          >
+            Homechow
+          </h3>
           <p class="">
             One of Ghana’s best & most promising food delivery startups in 2019
           </p>
@@ -75,13 +75,13 @@
       <nuxt-link to="#" class="md:w-5/12">
         <img src="~/assets/img/new/Farm-for-me.png" alt="" class="" />
 
-        <h3
-          class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
-        >
-          A Farm For Me web
-        </h3>
-
         <div class="pb-20 slider">
+          <h3
+            class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
+          >
+            A Farm For Me web
+          </h3>
+
           <p class="">
             A Farm For Me is a web app for Africans to invest in virtual farms
             and and earn profits.
@@ -91,14 +91,14 @@
       <nuxt-link to="#" class="md:w-5/12 md:mt-20">
         <img src="~/assets/img/new/Microbis.png" alt="" class="" />
 
-        <h3
-          class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
-        >
-          MicroBis web
-        </h3>
-
-        <!-- <p> -->
         <div class="pb-20 slider">
+          <h3
+            class="mt-10 mb-3 font-semibold md:text-2xl lg:text-3xl text-c-mob "
+          >
+            MicroBis web
+          </h3>
+
+          <!-- <p> -->
           <p class="">
             MicroBis helps laboratory scientist to detect bacteria in samples
             and suggests possible antibiotics it will be susceptible to.

@@ -62,7 +62,7 @@ export default {}
 
 .scroller {
   width: 300%;
-  animation: scroll 15s linear infinite;
+  animation: scroll 8s linear infinite;
 
   @include respond(phone) {
     width: 700%;
