@@ -48,7 +48,7 @@ body {
 .slider {
 
    position: relative;
-   transition: all 1s;
+   transition: all .3s;
    overflow: hidden;
 
 
@@ -64,7 +64,7 @@ body {
      height: 2%;
      width: 100%;
      transform: translateX(-100%);
-     transition: all 1s;
+     transition: all .3s;
 
 
    }
