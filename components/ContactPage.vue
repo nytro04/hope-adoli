@@ -45,11 +45,12 @@
         </li>
       </ul>
 
-      <form class="mt-8 lg:mt-20 md:mt-10" @submit.prevent="handleContact">
+      <form class="mt-8 lg:mt-16 md:mt-10" @submit.prevent="handleForms">
         <div class="md:flex">
           <div class="md:w-1/2">
             <input
               id="firstName"
+              v-model="formData.name"
               name="firstName"
               class="inline-block w-full px-3 py-1 mb-3 bg-gray-200 md:py-3"
               type="text"
@@ -58,6 +59,7 @@
 
             <input
               id="email"
+              v-model="formData.email"
               name="email"
               class="inline-block w-full px-3 py-1 mb-3 bg-gray-200 md:py-3 "
               type="email"
@@ -68,48 +70,50 @@
             <div>
               <select
                 id="interest"
+                v-model="formData.interest"
                 name="interest"
                 class="inline-block w-full px-2 py-2 mb-3 bg-gray-200 md:py-3 "
               >
-                <option value="">
+                <option value disabled>
                   Interested in...
                 </option>
-                <option value="">
+                <option value="UI/UX Design">
                   UI/UX Design
                 </option>
-                <option value="">
+                <option value="UX Audit">
                   UX Audit
                 </option>
-                <option value="">
+                <option value="UX Consultation">
                   UX Consultation
                 </option>
-                <option value="">
+                <option value="General Inquiry">
                   General Inquiry
                 </option>
               </select>
             </div>
             <div>
               <select
-                id="interest"
-                name="interest"
+                id="budget"
+                v-model="formData.budget"
+                name="budget"
                 class="inline-block w-full px-2 py-2 mb-3 bg-gray-200 md:py-3"
               >
-                <option value="">
+                <option value disabled>
                   What's your budget range?
                 </option>
-                <option value="">
+                <option value="$3,500">
                   Less than $3,500
                 </option>
-                <option value="">
+                <option value="$3,600 - $5,000">
                   $3,600 - $5,000
                 </option>
-                <option value="">
+                <option value="$6,000 - $9,000">
                   $6,000 - $9,000
                 </option>
-                <option value="">
+                <option value="More than $10,000">
                   More than $10,000
                 </option>
-                <option value="">
+                <option value="No budget yet">
                   No budget yet 🙁
                 </option>
               </select>
@@ -118,6 +122,7 @@
           <div class="md:w-1/2 md:ml-8">
             <textarea
               id=""
+              v-model="formData.message"
               name=""
               cols="30"
               rows="3"
@@ -127,7 +132,10 @@
             ></textarea>
             <div class="mt-2 md:text-right">
               <button class=" btn btn__black">
-                Send message
+                <span v-if="loading"><LoadingSvg /> Sending...</span>
+                <span v-else>
+                  Send message
+                </span>
               </button>
             </div>
           </div>
@@ -140,11 +148,13 @@
 <script>
 import LinkSvg from '~/assets/svgs/arrow-up-right-2.svg?inline'
 import CloseSvg from '~/assets/svgs/x.svg?inline'
+import LoadingSvg from '~/assets/svgs/loading.svg?inline'
 
 export default {
   components: {
     LinkSvg,
-    CloseSvg
+    CloseSvg,
+    LoadingSvg
   },
   props: {
     close: {
@@ -155,6 +165,14 @@ export default {
   data() {
     return {
       open: false,
+      loading: true,
+      formData: {
+        name: '',
+        email: '',
+        interest: '',
+        budget: '',
+        message: ''
+      },
       links: [
         {
           name: 'Twitter',
@@ -177,7 +195,33 @@ export default {
     //   this.$emit('close-slide')
     // },
 
-    handleContact() {}
+    resetForms() {
+      for (const key in this.formData) {
+        if (Object.getOwnPropertyDescriptor(this.formData, key)) {
+          this.formData[key] = ''
+        }
+      }
+    },
+
+    async handleForms() {
+      this.loading = true
+      try {
+        const response = await this.$axios.post(
+          'https://formspree.io/f/xjvjrapk',
+          this.formData
+        )
+        console.log(response)
+
+        if (response.status === 200) {
+          this.loading = false
+          this.resetForms()
+
+          alert('form submitted')
+        }
+      } catch (error) {
+        console.log(error)
+      }
+    }
   }
 }
 </script>
