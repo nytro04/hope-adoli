@@ -15,7 +15,7 @@
           >
             GrainMate mobile
           </h3>
-          <p class="">
+          <p class="text-p-mob">
             GrainMate app is supercharging African farmers and agribusinesses
             with the tools and resources they need to get to the next level ⚡️
           </p>
@@ -31,7 +31,7 @@
             Wacomm mobile
           </h3>
 
-          <p :class="{ active: hover }" class="move">
+          <p class="text-p-mob">
             The Geo-social property management app that connects property owners
             and their tenants.
           </p>
@@ -49,7 +49,7 @@
           >
             Adiutor
           </h3>
-          <p class="">
+          <p class="text-p-mob">
             Aduitor is attempting to redefine how educational institutions are
             managed in Ghana and Africa as a whole.
           </p>
@@ -64,7 +64,7 @@
           >
             Homechow
           </h3>
-          <p class="">
+          <p class="text-p-mob">
             One of Ghana’s best & most promising food delivery startups in 2019
           </p>
         </div>
@@ -82,7 +82,7 @@
             A Farm For Me web
           </h3>
 
-          <p class="">
+          <p class="text-p-mob">
             A Farm For Me is a web app for Africans to invest in virtual farms
             and and earn profits.
           </p>
@@ -99,7 +99,7 @@
           </h3>
 
           <!-- <p> -->
-          <p class="">
+          <p class="text-p-mob">
             MicroBis helps laboratory scientist to detect bacteria in samples
             and suggests possible antibiotics it will be susceptible to.
           </p>
@@ -128,6 +128,11 @@ export default {
   @include respond(phone) {
     /* text-align: center; */
     margin-left: 2rem;
+  }
+}
+.text-p-mob {
+  @include respond(phone) {
+    margin: 0 2rem;
   }
 }
 
