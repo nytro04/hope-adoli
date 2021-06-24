@@ -44,26 +44,42 @@ select {
 }
 
 label {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
-	min-width: 10em;
-	max-width: 18em;
+     position: relative;
+    // width: 80%;
+    min-width: 10em;
+    max-width: 18em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
   // overflow: hidden;
 }
 
+// label::after {
+//   content: '\25BE';
+// 	// background-color: var(--focused-border-color);
+// 	color: #fff;
+// 	width: 2rem;
+// 	position: absolute;
+// 	top: 0;
+// 	bottom: 0;
+// 	right: 0;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	pointer-events: none;
+// }
+
 label.svg::after  {
 
-    // position: absolute;
-    // top: 10px;
-    // bottom: 0;
-    // right: 15px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // pointer-events: none;
+    position: absolute;
+    width: 2rem;
+    top: 12px;
+left: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
     content: url('~/assets/svgs/dropdown.svg');
     line-height: 0;
 

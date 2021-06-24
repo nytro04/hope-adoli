@@ -68,6 +68,7 @@
             />
 
             <div>
+              <label class="svg"><span class="sr-only"></span></label>
               <select
                 id="interest"
                 v-model="formData.interest"
