@@ -1,5 +1,5 @@
 <template>
-  <div class="recent-works">
+  <div id="recent-works" class="recent-works">
     <h2 class="mr-5 font-semibold text-right heading heading__primary">
       Recent works
     </h2>

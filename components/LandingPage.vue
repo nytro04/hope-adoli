@@ -28,10 +28,10 @@
             workshops across Ghana.
           </p>
         </div>
-        <div class="relative svg-mobile">
+        <a href="#recent-works" class="relative block svg-mobile">
           <ArrowBadgeSvg class="absolute w-20 h-20 right-2 top-2 " />
           <ArrowDownSvg class="absolute w-10 h-10 right-6 top-6" />
-        </div>
+        </a>
       </div>
     </div>
   </div>
