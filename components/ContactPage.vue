@@ -92,6 +92,7 @@
               </select>
             </div>
             <div>
+              <label class="svg"><span class="sr-only"></span></label>
               <select
                 id="budget"
                 v-model="formData.budget"
@@ -132,7 +133,7 @@
             ></textarea>
             <div class="mt-2 md:text-right">
               <button class=" btn btn__black">
-                <span v-if="loading"><LoadingSvg /> Sending...</span>
+                <span v-if="loading"><LoadingSvg /> ...</span>
                 <span v-else>
                   Send message
                 </span>
@@ -165,7 +166,7 @@ export default {
   data() {
     return {
       open: false,
-      loading: true,
+      loading: false,
       formData: {
         name: '',
         email: '',

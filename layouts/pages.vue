@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class=" cursor-svg">
     <transition name="slide">
       <div v-if="open" class="slidein">
         <ContactPage :close="toggle" />
