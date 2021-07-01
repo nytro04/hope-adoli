@@ -133,7 +133,7 @@
               class="w-full px-3 py-2 mb-3 text-sm bg-gray-200 resize-none"
             ></textarea>
             <div class="mt-2 md:text-right">
-              <button class=" btn btn__black">
+              <button class="w-full btn btn__black">
                 <span v-if="loading"><LoadingSvg /> ...</span>
                 <span v-else>
                   Send message
@@ -233,7 +233,7 @@ export default {
 
 .contact {
   @include respond(phone) {
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
 
   p {

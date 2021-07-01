@@ -22,6 +22,7 @@ input[type='password'],
 input[type='number'],
 input[type='date'],
 input[type='time'] {
+   height: 2.5rem;
   // padding: 0 1rem 2rem;
   &:focus {
     outline: none;
@@ -32,7 +33,7 @@ select {
   appearance: none;
   border-width: 1px;
   border-color: transparent;
-  height: 3.2rem;
+  height: 2.5rem;
   padding: 0 1rem 2rem;
 
   flex-grow: 1;

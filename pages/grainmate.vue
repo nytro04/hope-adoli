@@ -2,7 +2,7 @@
   <div class="my-40 overflow-hidden grain-mate">
     <div class="container mx-auto lg:justify-between lg:flex sm:px-10">
       <div class="lg:w-6/12">
-        <h1 class="heading heading__primary">
+        <h1 class="text-5xl font-bold md:text-6xl">
           GrainMate <br />
           mobile app
         </h1>
@@ -174,6 +174,10 @@ export default {
 .grain-mate {
   @include respond(phone) {
     padding: 0 1rem;
+
+    p {
+      line-height: 1.5;
+    }
   }
 }
 
@@ -194,6 +198,7 @@ export default {
   @include respond(phone) {
     height: 30vh;
     width: 100%;
+    padding: 0 2.5rem;
   }
 
   &-bg-1 {
