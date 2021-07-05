@@ -1,12 +1,12 @@
 <template>
   <div class="footer">
-    <div class="justify-between py-5 border-t-2 border-white md:flex res-mob">
+    <div class="flex justify-between py-5 border-t-2 border-white res-mob">
       <p class="">
         &copy; uxkafui
       </p>
-      <p class="text-gray-500">
+      <!-- <p class="text-gray-500">
         2021 folio
-      </p>
+      </p> -->
       <!-- <div class=""> -->
       <ul class="justify-between md:flex ">
         <li v-for="(link, index) in links" :key="index">

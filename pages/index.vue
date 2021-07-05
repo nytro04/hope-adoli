@@ -2,7 +2,7 @@
   <!-- <div class="relative"> -->
   <div class="overflow-hidden">
     <LandingPage />
-    <div class="my-72"></div>
+    <div class="md:my-72 showreal"></div>
     <Video />
     <div class="my-72"></div>
     <RecentWorks />
@@ -34,4 +34,12 @@ export default {
 }
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@import './assets/scss/abstracts/mixins';
+
+@include respond(phone) {
+  .showreal {
+    margin: 30rem 0;
+  }
+}
+</style>
