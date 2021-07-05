@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container h-auto mx-auto overflow-y-auto text-black bg-white contact"
+    class="container h-auto mx-auto overflow-hidden text-black bg-white contact"
   >
     <div class="h-screen px-5 py-4 md:py-10 md:px-10 lg:px-20">
       <div class="flex justify-end">

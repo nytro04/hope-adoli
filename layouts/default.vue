@@ -41,6 +41,8 @@ export default {
   methods: {
     toggle() {
       this.open = !this.open
+      // refactor this
+      document.body.classList.toggle('modal-open')
     }
   }
 }
