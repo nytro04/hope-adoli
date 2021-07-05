@@ -6,7 +6,7 @@
     <span class="block mt-10 mb-32 border-t-2 border-white"></span>
 
     <div class="">
-      <h3 class="mb-10 sm:ml-5 heading__links">
+      <h3 class="mb-10 cursor-pointer sm:ml-5 heading__links" @click="toggle">
         Get In touch
       </h3>
 
@@ -34,6 +34,12 @@
         </li>
       </ul>
     </div>
+
+    <transition name="slide">
+      <div v-if="open" class="slidein">
+        <ContactPage :close="toggle" />
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -42,10 +48,12 @@ import LinkSvg from '~/assets/svgs/arrow-up-right.svg?inline'
 
 export default {
   components: {
-    LinkSvg
+    LinkSvg,
+    ContactPage: () => import('~/components/ContactPage')
   },
   data() {
     return {
+      open: false,
       links: [
         {
           name: 'Donwload free design resources',
@@ -56,6 +64,14 @@ export default {
           url: '/get-in-touch'
         }
       ]
+    }
+  },
+
+  methods: {
+    toggle() {
+      this.open = !this.open
+      // refactor this
+      document.body.classList.toggle('modal-open')
     }
   }
 }
@@ -68,5 +84,31 @@ export default {
   @include respond(phone) {
     height: 0.7rem;
   }
+}
+
+.slidein {
+  max-width: 60rem;
+
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+
+  @include respond(tab-land) {
+    width: 45rem;
+  }
+  @include respond(tab-port) {
+    width: 35rem;
+  }
+  @include respond(phone) {
+    width: 25rem;
+  }
+}
+
+.slide-enter,
+.slide-leave-active {
+  right: -100%;
 }
 </style>
