@@ -14,6 +14,11 @@
     <Links />
     <div class="my-40"></div>
     <!-- <Footer /> -->
+    <transition name="slide">
+      <div v-if="open" class="slidein">
+        <UnderConstruction :close="toggle" />
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -24,11 +29,29 @@ export default {
     Video: () => import('~/components/Video'),
     RecentWorks: () => import('~/components/RecentWorks'),
     Links: () => import('~/components/Links'),
-    Jobs: () => import('~/components/Jobs')
+    Jobs: () => import('~/components/Jobs'),
+    UnderConstruction: () => import('~/components/underConstruction')
+  },
+
+  data() {
+    return {
+      open: false
+    }
   },
   head() {
     return {
       title: 'Hope Adoli | Portfolio Index'
+    }
+  },
+  mounted() {
+    this.open = true
+  },
+
+  methods: {
+    toggle() {
+      this.open = !this.open
+      // refactor this
+      document.body.classList.toggle('modal-open')
     }
   }
 }
@@ -41,5 +64,32 @@ export default {
   .showreal {
     margin: 30rem 0;
   }
+}
+
+.slidein {
+  max-width: 37rem;
+  /* height: 25rem; */
+  /* padding: 0rem 2rem; */
+  position: fixed;
+  z-index: 100;
+  bottom: 2rem;
+  right: 1rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.8s ease-in-out;
+
+  @include respond(tab-land) {
+    width: 45rem;
+  }
+  @include respond(tab-port) {
+    width: 35rem;
+  }
+  @include respond(phone) {
+    width: 25rem;
+  }
+}
+
+.slide-enter,
+.slide-leave-active {
+  bottom: -100%;
 }
 </style>

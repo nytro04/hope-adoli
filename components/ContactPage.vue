@@ -212,7 +212,6 @@ export default {
           'https://formspree.io/f/xjvjrapk',
           this.formData
         )
-        console.log(response)
 
         if (response.status === 200) {
           this.loading = false
