@@ -44,14 +44,15 @@ export default {
     }
   },
   mounted() {
+    document.body.classList.toggle('modal-open')
     this.open = true
   },
 
   methods: {
     toggle() {
       this.open = !this.open
-      // refactor this
       document.body.classList.toggle('modal-open')
+      // refactor this
     }
   }
 }
@@ -67,7 +68,7 @@ export default {
 }
 
 .slidein {
-  max-width: 37rem;
+  max-width: 33rem;
   /* height: 25rem; */
   /* padding: 0rem 2rem; */
   position: fixed;
