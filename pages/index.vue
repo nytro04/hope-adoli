@@ -30,7 +30,7 @@ export default {
     RecentWorks: () => import('~/components/RecentWorks'),
     Links: () => import('~/components/Links'),
     Jobs: () => import('~/components/Jobs'),
-    UnderConstruction: () => import('~/components/underConstruction')
+    UnderConstruction: () => import('~/components/UnderConstruction')
   },
 
   data() {
