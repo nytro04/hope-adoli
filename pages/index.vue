@@ -68,7 +68,7 @@ export default {
 }
 
 .slidein {
-  max-width: 33rem;
+  max-width: 33.5rem;
   /* height: 25rem; */
   /* padding: 0rem 2rem; */
   position: fixed;
@@ -85,7 +85,7 @@ export default {
     width: 35rem;
   }
   @include respond(phone) {
-    width: 25rem;
+    width: 21rem;
   }
 }
 
