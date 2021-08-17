@@ -68,13 +68,13 @@ export default {
 }
 
 .slidein {
-  max-width: 33.5rem;
+  max-width: 35rem;
   /* height: 25rem; */
   /* padding: 0rem 2rem; */
   position: fixed;
   z-index: 100;
-  bottom: 2rem;
-  right: 1rem;
+  bottom: 0rem;
+  right: 0rem;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   transition: all 0.8s ease-in-out;
 
@@ -85,7 +85,8 @@ export default {
     width: 35rem;
   }
   @include respond(phone) {
-    width: 21rem;
+    width: 22rem;
+    margin: 0 0.7rem;
   }
 }
 
