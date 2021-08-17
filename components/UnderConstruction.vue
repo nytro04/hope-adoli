@@ -7,7 +7,7 @@
     </h3>
     <h3 class="text-center ">
       Thank you for visiting my portfolio website, Please note that it is
-      currently under contruction so I'd like to apologize in advance for any
+      currently under construction so I'd like to apologize in advance for any
       inconvenience you may have to deal with. Thank you. 😊
     </h3>
 
